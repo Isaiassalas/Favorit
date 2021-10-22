@@ -1,0 +1,185 @@
+{
+  "Header": {
+    "title": "¡Probado por el tiempo!",
+    "paragraph": "Los aceites de motor FAVORIT están diseñados para garantizar el funcionamiento eficiente y la protección de los turismos y vehículos comerciales en condiciones de carga elevada. Nuestros productos han superado con éxito las pruebas de laboratorio y las pruebas de producción."
+  },
+  "About": {
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Why": [
+      "Lorem ipsum dolor",
+      "Tempor incididunt",
+      "Lorem ipsum dolor",
+      "Incididunt ut labore"
+    ],
+    "Why2": [
+      "Aliquip ex ea commodo",
+      "Lorem ipsum dolor",
+      "Exercitation ullamco",
+      "Lorem ipsum dolor"
+    ]
+  },
+  "last news": [
+    {
+      
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+     
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+     
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+     
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+
+  "Gallery": [
+    {
+      "title": "Galeria Favorit",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Galeria Favorit",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Galeria Favorit",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Galeria Favorit",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Galeria Favorit",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Galeria Favorit",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Galeria Favorit",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Galeria Favorit",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Galeria Favorit",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+     
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+     
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+     
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+  "Testimonials": [
+    {
+      
+      "name": "Contactos del fabricante",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
+      "subname": "Asuntos Generales: ",
+      "tel": "tel/fax: +375(17) 516-65-11 ", 
+      "email": "e-mail: info@company.com",
+      "info": "Datos de contacto:",
+      "ubicacion": "Dirección Distribuidora: Russian Federation JSC \"NLK\" Moscow st. Saltykovskaya d8, office 302 A ind. 111673",
+      "imgubi": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d396.8712769609952!2d37.922203255782996!3d55.75775575813348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzI4LjMiTiAzN8KwNTUnMjAuNSJF!5e0!3m2!1ses!2sve!4v1634617436550!5m2!1ses!2sve",
+      "phone":"Teléfonos Generales: tel/fax: +375(17) 516-65-11 Accounting and personnel: tel: +375(17) 510-88-31" 
+    }
+   
+    
+  ],
+ 
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "Passenger car engine oil",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "motor oils for trucks",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "greases",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "engine oils as per gost standard",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
+    },
+    {
+      "img": "img/team/05.jpg",
+      "name": "industrial oils",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
+    },
+    {
+      "img": "img/team/06.jpg",
+      "name": "container production",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
+    },
+    {
+      "img": "img/team/07.jpg",
+      "name": "oils for motorbikes and etc",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
+    },
+    {
+      "img": "img/team/08.jpg",
+      "name": "chain oil",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
+    }
+  ],
+  
+  "Features": [
+    {
+     
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
+      "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "mensaje": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet"
+     
+ 
+    } 
+   
+  ]
+}
