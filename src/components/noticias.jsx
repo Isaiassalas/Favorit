@@ -1,3 +1,6 @@
+import React from "react";
+
+
 export const Noticias = (props) => {
   return (
     <div id='noticias' className=''>
