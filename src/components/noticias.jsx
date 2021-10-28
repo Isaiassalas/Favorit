@@ -3,7 +3,7 @@
 
 export const Noticias = (props) => {
   return (
-    <div id='noticias' className=''>
+    <div id='noticias' >
       <div className='container'>
         <div className='section-title text-center '>
           <h2>News</h2>
