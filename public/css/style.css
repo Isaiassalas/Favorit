@@ -665,12 +665,13 @@ label {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .container{
     width: 100%;
   }
+  
 }
-@media (max-width: 750px) {
+@media (max-width: 769px) {
   #menu img {
     width: 30%;
   }
@@ -687,10 +688,42 @@ h2{
   font-size: 32px;
 }
 }
+
+@media (max-width: 435px) {
+  #menu img {
+    width: 42%;
+  }
+  #noticias{
+    width: 95%;
+    margin:120px 10px 40px 10px  ;
+   
+  }
+  .portfolio-item{
+    padding: 10px;
+    margin: 0px;
+  }
+  #services{
+    margin: 30px 20px;
+  }
+
+.intro h1{
+  font-size: 35px;
+  font-weight: 600;
+}
+h2{
+  font-size: 29px;
+}
+header .intro-text{
+  padding-top: 240px;
+  padding-bottom: 140px;
+}
+
+}
+
 @media (max-width: 400px) {
   #noticias{
-    width: 100%;
-    margin:120px 30px 40px 20px  ;
+    width: 93%;
+    margin:120px 10px 40px 10px  ;
    
   }
   #menu img {
@@ -700,13 +733,13 @@ h2{
     margin: 20px;
   }
   #services{
-    margin: 30px 10px 40px 50px;
+    margin: 30px 20px;
   }
    h2{
     font-size: 27px;
   }
   .intro{
-    width: 111%;
+    width: 100%;
   }
   .intro h1{
     font-size: 35px;
@@ -715,6 +748,23 @@ h2{
   header .intro-text{
     padding-top: 250px;
     padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 330px) {
+  #menu img{
+    width: 53%;
+  }
+  h2{
+    font-size: 20px;
+  }
+  .intro h1{
+    font-size: 27px;
+    font-weight: 600;
+  }
+  header .intro-text{
+    padding-top: 200px;
+    padding-bottom: 100px;
   }
 }
 
