@@ -76,6 +76,12 @@ hr {
   padding: 15px;
   transition: all 0.8s;
 }
+
+#menu img{
+  
+  width: 180px;
+ 
+}
 #menu.navbar-default {
   background-color: #710101;
   border-color: rgba(231, 231, 231, 0);
