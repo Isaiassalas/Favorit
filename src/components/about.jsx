@@ -7,11 +7,11 @@ export const About = (props) => {
         <div className="row">
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>About Us</h2>
-              <p>{props.data ? props.data.paragraph : "loading..."}</p>
+              <h2>Sobre nosotros</h2>
+             
               <p>{props.data ? props.data.paragraph : "loading..."}</p>
               
-              <h3>Why Choose Us?</h3>
+              <p> La empresa fabrica productos bajo la marca «FAVORIT» . La gama incluye más de 60 artículos:</p>
               <div className="list-style">
               <div className="col-lg-6 col-sm-6 col-xs-12">
               <ul>
@@ -44,8 +44,8 @@ export const About = (props) => {
 
               <div className="about-text">
                 
-                <p>{props.data ? props.data.paragraph : "loading..."}</p>
-                <p>{props.data ? props.data.paragraph : "loading..."}</p>
+                <p>{props.data ? props.data.paragraph2 : "loading..."}</p>
+                <p>{props.data ? props.data.paragraph3 : "loading..."}</p>
               
             </div>
             </div>
@@ -60,9 +60,9 @@ export const About = (props) => {
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
               <h2>FAVORIT</h2>
-              <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              
+              <p>{props.data ? props.data.paragraph4 : "loading..."}</p>
+              <p>{props.data ? props.data.paragraph5 : "loading..."}</p>
+              <p>{props.data ? props.data.paragraph6 : "loading..."}</p>
             </div>
           </div>
         </div>

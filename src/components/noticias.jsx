@@ -6,48 +6,47 @@ export const Noticias = (props) => {
     <div id='noticias' >
       <div className='container'>
         <div className='section-title text-center '>
-          <h2>News</h2>
+          <h2>Noticias</h2>
           
         </div>
         <div className='row'>
-          <h4 className="text-danger">Successfully completed the coolant testing qualification program</h4>
+          <h4 className="text-danger">Completó con éxito el programa de calificación de prueba de refrigerante</h4>
           <p><strong>07-12-2020</strong></p>
           <p>
 
-              In accordance with the requirements of GOST / ISO 17043, the research laboratory of Eurasia Lubricants LLC successfully took part in the proficiency testing program for testing laboratories in the field of coolant analysis. The interlaboratory comparisons were attended by 20 testing laboratories, including 8 accredited laboratories entitled to test coolants. Based on the round of the…
+          De acuerdo con los requisitos de GOST / ISO 17043, el laboratorio de investigación de Eurasia Lubricants LLC participó con éxito en el programa de pruebas de aptitud para laboratorios de pruebas en el campo del análisis de refrigerantes. A las comparaciones entre laboratorios asistieron 20 laboratorios de prueba, incluidos 8 laboratorios acreditados con derecho a probar refrigerantes. Basado en la ronda del…
           </p>
           
         </div>
         <div className='row'>
-          <h4 className="text-danger">Laboratory successfully completed proficiency testing scheme</h4>
+          <h4 className="text-danger">El laboratorio completó con éxito el esquema de pruebas de aptitud</h4>
           <p><strong>13-07-2020</strong></p>
           <p>
 
-          In accordance with the requirements of GOST / ISO 17043, the research laboratory of Eurasia Lubricants LLC has successfully taken part in the proficiency testing program of testing laboratories in the field of petroleum product analysis. In the interlaboratory comparisons took part 20 testing laboratories, including 14 accredited laboratories having the right to test engine oil.
+          De acuerdo con los requisitos de GOST / ISO 17043, el laboratorio de investigación de Eurasia Lubricants LLC ha participado con éxito en el programa de ensayos de aptitud de los laboratorios de ensayo en el campo del análisis de productos petrolíferos. En las comparaciones interlaboratorios participaron 20 laboratorios de prueba, incluidos 14 laboratorios acreditados que tienen derecho a probar el aceite de motor.
           </p>
           
         </div>
         <div className='row'>
-          <h4 className="text-danger">Change phone numbers</h4>
+          <h4 className="text-danger">Cambiar números de teléfono</h4>
           <p><strong>19-03-2020</strong></p>
           <p>
 
-          We inform you that from March 19, 2020, there was a change in the phone numbers of Eurasia Lubricants LLC. In this regard, we kindly ask you to take these changes into account.
+          Le informamos que a partir del 19 de marzo de 2020, hubo un cambio en los números de teléfono de Eurasia Lubricants LLC. En este sentido, le rogamos que tenga en cuenta estos cambios.
 
           </p>
-          <p> Current and new phone numbers:
+          <p> Números de teléfono actuales y nuevos:
           +375 (17) 510-88-31
           +375 (17) 516-65-11 (tel./fax)
           +375 (17) 516-65-12 
           </p>
         </div>
         <div className='row'>
-          <h4 className="text-danger">MTZ OJSC introduced FAVORIT lubricantsT</h4>
+          <h4 className="text-danger">MTZ OJSC presentó los lubricantes FAVORITT</h4>
           <p><strong>06-11-2019</strong></p>
           <p>
 
-          Based on the results of laboratory and industrial tests at the Minsk Tractor Plant OJSC of lubricants manufactured by Eurasia Lubricants LLC, positive conclusions were obtained on their suitability for servicing the equipment being manufactured. Based on the conclusions, the designations of the following working fluids under the FAVORIT brand were entered into the chemical map of the nodes of…
-
+          Con base en los resultados de las pruebas de laboratorio e industriales en la Planta de Tractores de Minsk OJSC de lubricantes fabricados por Eurasia Lubricants LLC, se obtuvieron conclusiones positivas sobre su idoneidad para el mantenimiento de los equipos en fabricación. Con base en las conclusiones, las designaciones de los siguientes fluidos de trabajo bajo la marca FAVORIT se ingresaron en el mapa químico de los nodos de…
           </p>
          
         </div>

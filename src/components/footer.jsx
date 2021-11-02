@@ -39,10 +39,9 @@ export const Footer = (props) => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>Get In Touch</h2>
+                <h2>Ponte en Contacto</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                Complete el siguiente formulario para enviarnos un correo electrónico y nos comunicaremos con usted lo antes posible.
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
@@ -54,7 +53,7 @@ export const Footer = (props) => {
                         id='name'
                         name='name'
                         className='form-control'
-                        placeholder='Name'
+                        placeholder='Nombre'
                         required
                         onChange={handleChange}
                       />
@@ -68,7 +67,7 @@ export const Footer = (props) => {
                         id='email'
                         name='email'
                         className='form-control'
-                        placeholder='Email'
+                        placeholder='Correo Electronico'
                         required
                         onChange={handleChange}
                       />
@@ -82,7 +81,7 @@ export const Footer = (props) => {
                     id='message'
                     className='form-control'
                     rows='4'
-                    placeholder='Message'
+                    placeholder='Mensaje'
                     required
                     onChange={handleChange}
                   ></textarea>
@@ -90,17 +89,17 @@ export const Footer = (props) => {
                 </div>
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                  Enviar Mensaje
                 </button>
               </form>
             </div>
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
-              <h3>Contact Info</h3>
+              <h3>Informacion de Contacto</h3>
               <p>
                 <span>
-                  <i className='fa fa-map-marker'></i> Address
+                  <i className='fa fa-map-marker'></i> Dirección
                 </span>
                         Distributor in the Russian Federation
                         JSC "NLK" Moscow st. Saltykovskaya d8, office 302 A ind. 111673
@@ -109,7 +108,7 @@ export const Footer = (props) => {
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-phone'></i> Phone
+                  <i className='fa fa-phone'></i> Telefono
                 </span>{' '}
                 General issues: 
                 tel/fax: +375(17) 516-65-11
@@ -120,7 +119,7 @@ export const Footer = (props) => {
             <div className='contact-item'>
               <p>
                 <span>
-                  <i className='fa fa-envelope-o'></i> Email
+                  <i className='fa fa-envelope-o'></i> Correo Electronico
                 </span>{' '}
                 e-mail: info@favoritcars.by
 

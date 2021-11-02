@@ -4,86 +4,92 @@
     "paragraph": "Los aceites de motor FAVORIT están diseñados para garantizar el funcionamiento eficiente y la protección de los turismos y vehículos comerciales en condiciones de carga elevada. Nuestros productos han superado con éxito las pruebas de laboratorio y las pruebas de producción."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "LLC Eurasia Lubricants - empresa conjunta, cuyo enfoque principal es la producción  de aceites de motor y lubricantes. ",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "aceites de motor.",
+      "grasa.",
+      "aceites hidráulicos."
+     
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
-    ]
+      "aceites de lavado.",
+      "aceites para engranajes.",
+      "anticongelante y otros fluidos técnicos."
+  
+    ],
+    "paragraph2": "La tecnología de producción se mejora constantemente. Las fórmulas se dominan y mejoran. La empresa está equipada con equipos tecnológicos programables precisos, lo que permite producir productos de alta calidad que cumplen con los estándares europeos y los más altos requisitos de los fabricantes de automóviles modernos. ",
+    "paragraph3": "Todos los productos «FAVORIT» se fabrican sobre la base de acuerdos de licencia celebrados con empresas alemanas y suizas, y en estricta conformidad con los reglamentos técnicos y los procesos de producción previstos. ",
+    "paragraph4": "En la producción de productos se utilizan materias primas de alta calidad de los principales fabricantes. A un alto nivel, se llevan a cabo el control de calidad de entrada de las materias primas y el control de calidad de salida de los productos terminados. Se emiten certificados y declaraciones de cumplimiento de los requisitos del Reglamento Técnico de la Unión Aduanera. ",
+    "paragraph5": "Los productos terminados se colocan en almacenes de tipo 'A', lo que le permite atender rápidamente a los clientes. La empresa también tiene a su disposición una flota de cisternas y contenedores con una capacidad superior a las 10 mil toneladas para el almacenamiento de productos terminados y componentes. ",
+    "paragraph6": "Una línea ferroviaria con rampa, ubicada en el territorio de la empresa, permite cargar petróleo en tanques ferroviarios, así como el envío de productos en vagones o vehículos para su transporte a países vecinos y más allá. "
+
   },
-  "last news": [
+  "News": [
     {
-      
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+     
+      "titulo": "Completó con éxito el programa de calificación de prueba de refrigerante",
+      "noticia": "De acuerdo con los requisitos de GOST / ISO 17043, el laboratorio de investigación de Eurasia Lubricants LLC ..."
     },
     {
      
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "titulo": "El laboratorio completó con éxito el programa de ensayos de aptitud",
+      "noticia": "De acuerdo con los requisitos de GOST / ISO 17043, el laboratorio de investigación de Eurasia Lubricants LLC ..."
     },
     {
      
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "titulo": "Cambiar números de teléfono",
+      "noticia": "Le informamos que a partir del 19 de marzo de 2020, hubo un cambio en los números de teléfono de Eurasia Lubricants LLC. En esto…"
     },
     {
      
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "titulo": "Actualización del sitio",
+      "noticia": "- Improved directory structure; - Improved the main page of the site; - Updated content."
     }
   ],
 
   "Gallery": [
     {
-      "title": "Galeria Favorit",
+      "title": "Oficina",
       "largeImage": "img/portfolio/01-large.jpg",
       "smallImage": "img/portfolio/01-small.jpg"
     },
     {
-      "title": "Galeria Favorit",
+      "title": "Laboratorio",
       "largeImage": "img/portfolio/02-large.jpg",
       "smallImage": "img/portfolio/02-small.jpg"
     },
     {
-      "title": "Galeria Favorit",
+      "title": "Producción y llenado de aceite",
       "largeImage": "img/portfolio/03-large.jpg",
       "smallImage": "img/portfolio/03-small.jpg"
     },
     {
-      "title": "Galeria Favorit",
+      "title": "Grasa",
       "largeImage": "img/portfolio/04-large.jpg",
       "smallImage": "img/portfolio/04-small.jpg"
     },
     {
-      "title": "Galeria Favorit",
+      "title": "anticongelante",
       "largeImage": "img/portfolio/05-large.jpg",
       "smallImage": "img/portfolio/05-small.jpg"
     },
     {
-      "title": "Galeria Favorit",
+      "title": "Producción de botes de plástico",
       "largeImage": "img/portfolio/06-large.jpg",
       "smallImage": "img/portfolio/06-small.jpg"
     },
     {
-      "title": "Galeria Favorit",
+      "title": "producción de envases metálicos",
       "largeImage": "img/portfolio/07-large.jpg",
       "smallImage": "img/portfolio/07-small.jpg"
     },
     {
-      "title": "Galeria Favorit",
+      "title": "Depósito",
       "largeImage": "img/portfolio/08-large.jpg",
       "smallImage": "img/portfolio/08-small.jpg"
     },
     {
-      "title": "Galeria Favorit",
+      "title": "Otros",
       "largeImage": "img/portfolio/09-large.jpg",
       "smallImage": "img/portfolio/09-small.jpg"
     }
@@ -91,30 +97,31 @@
   "Services": [
     {
       
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Favorit Moto 4T SAE 20W-50 API SG / CD Favorit Moto 4T SAE 20W-50 API SG / CD ",
+      "text": "Es un aceite de motor mineral diseñado para su uso en cuatro str…"
     },
     {
      
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Favorit LITOL-24 MP2 / 3",
+      "text": "Grasa de litio multiusos, a base de aceites minerales refinados, contiene antioxidantes especiales…"
     },
     {
      
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Favorit Premium DPF SAE 5W-30 API SN / CF",
+      "text": "Aceite de motor sintético diseñado para su uso en vehículos con motor de gasolina y diésel ..."
     },
     {
      
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Favorit Multi SL SAE 15W-40 API SL / CF",
+      "text": "Aceite de motor multigrado multiusos con base mineral altamente purificada para gasolina moderna ..."
     }
+
   ],
   "Testimonials": [
     {
       
       "name": "Contactos del fabricante",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
+      "text": "LLC “Eurasia Lubricants”1 Zavodskaya Street, build.3, Zaslavl, 223034, región de Minsk. Coordenadas: 54.015345930936284,27.267377122085968",
       "subname": "Asuntos Generales: ",
       "tel": "tel/fax: +375(17) 516-65-11 ", 
       "email": "e-mail: info@company.com",
@@ -130,53 +137,58 @@
   "Team": [
     {
       "img": "img/team/01.jpg",
-      "name": "Passenger car engine oil",
+      "name": "Aceite de motor de turismos",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
       "img": "img/team/02.jpg",
-      "name": "motor oils for trucks",
+      "name": "aceites de motor para camiones",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
       "img": "img/team/03.jpg",
-      "name": "greases",
+      "name": "grasas",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
       "img": "img/team/04.jpg",
-      "name": "engine oils as per gost standard",
+      "name": "Aceites de motor según norma gost",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
       "img": "img/team/05.jpg",
-      "name": "industrial oils",
+      "name": "aceites industriales",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
       "img": "img/team/06.jpg",
-      "name": "container production",
+      "name": "producción de contenedores",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
       "img": "img/team/07.jpg",
-      "name": "oils for motorbikes and etc",
+      "name": "Aceites para motos, etc.",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
       "img": "img/team/08.jpg",
-      "name": "chain oil",
+      "name": "aceite de cadena",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     }
   ],
   
   "Features": [
     {
-     
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
-      "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "mensaje": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet"
+     "titlep":"Marca FAVORIT está representada en más de 30 países, su gama incluye una gama completa de lubricantes de alta calidad: aceites de motor, transmisión e hidráulicos, grasas y refrigerantes. Los productos de marca se venden en todos los segmentos del mercado automotriz: grandes tiendas y mercados especializados, estaciones de servicio, puntos de cambio de aceite, cadenas de hipermercados.",
+     "textp":"Gracias a nuestra experiencia y competencia, aseguramos el éxito de nuestros socios. Durante todo el tiempo de nuestro trabajo, nos hemos ganado la confianza de muchas empresas, que ahora son nuestros socios comerciales habituales.",
+      "title": "FAVORIT",
+      "text": "se trata de aceites y lubricantes producidos sobre la base de acuerdos de licencia entre Alemania y Suiza en estricta conformidad con los procesos de fabricación aprobados y los reglamentos técnicos proporcionados.",
+      "text2": "se trata de un seguimiento constante de la calidad del producto terminado. El más estricto control sobre los procesos tecnológicos y materias primas de entrada.",
+      "text3": "Es un logotipo llamativo y brillante, un diseño de empaque universal y moderno.",
+      "text4": "es una relación calidad-precio ideal.",
+      "text5": "Se trata de una gran variedad de aceites estándar y especializados, lubricantes para automóviles y camiones, así como equipos especiales.",
+      "text6": "se trata de tecnologías que se desarrollan y mejoran constantemente.",
+      "mensaje": "Fabricante exclusivo bajo licencias germano-suizas en la República de Bielorrusia - LLC Eurasia Lubricants"
      
  
     } 

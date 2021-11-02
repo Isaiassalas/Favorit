@@ -5,24 +5,27 @@ export const Features = (props) => {
     <div id='features' >
       <div className='container'>
         <div className='col-md-10 col-md-offset-1 section-title text-center'>
-          <h2>FAVORIT - MORE THAN 15 YEARS OF PERFECT QUALITY!</h2>
+          <h2>FAVORIT - ¡MÁS DE 15 AÑOS DE PERFECTA CALIDAD!</h2>
         </div>
         <div className='row'>
           {props.data
             ? props.data.map((d, i) => (
                 <div key={`${d.title}-${i}`} className='col-xs-12'>
                   {' '}
-                  <h3>{d.title}</h3>
-                  <p>{d.text}</p>
-                  <p>{d.text}</p>
+                  <p>{d.titlep}</p>
+                  <p>{d.textp}</p>
                   <h3>{d.title}</h3>
                   <p>{d.text}</p>
                   <h3>{d.title}</h3>
                   <p>{d.text2}</p>
                   <h3>{d.title}</h3>
-                  <p>{d.text2}</p>
+                  <p>{d.text3}</p>
                   <h3>{d.title}</h3>
-                  <p>{d.text}</p>
+                  <p>{d.text4}</p>
+                  <h3>{d.title}</h3>
+                  <p>{d.text5}</p>
+                  <h3>{d.title}</h3>
+                  <p>{d.text6}</p>
                   <div className='col-md-10 col-md-offset-1 section-title text-center text-danger'>
                   <p>{d.mensaje}</p>
           
@@ -47,8 +50,15 @@ export const AboutHome= (props) => {
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>About Us</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h2>Sobre nosotros</h2>
+              <p className="about-p">LLC Eurasia Lubricants: empresa conjunta, cuyo enfoque principal es la producción de aceites y lubricantes para motores. <br /> <br />
+                La empresa fabrica productos bajo la marca «FAVORIT». La gama incluye más de 60 artículos: <br />
+                - aceites de motor; <br /> 
+                - grasa; <br />
+                - aceites hidráulicos; <br />
+                - aceites de lavado; <br />
+                - aceites para engranajes; <br />
+                - anticongelante y otros fluidos técnicos. <br /></p>
               {/* <h3>Why Choose Us?</h3>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
