@@ -272,6 +272,10 @@ header .intro-text {
 #about .about-p{
   font-size: 18px;
 }
+#about .animated-img{
+  width: 60ch;
+  margin: auto;
+}
 /* About Section */
 #about {
   padding: 100px 0;
@@ -528,7 +532,7 @@ iframe{
 /* Contact Section */
 #footer {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #990000 0%, #710101 100%);
+  background: linear-gradient(to right, #800101 0%, #710101 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #footer .section-title {
@@ -727,6 +731,10 @@ header .intro-text{
   padding-top: 240px;
   padding-bottom: 140px;
 }
+#about .animated-img{
+  width: 50ch;
+  margin: auto;
+}
 
 }
 
@@ -759,6 +767,10 @@ header .intro-text{
     padding-top: 250px;
     padding-bottom: 150px;
   }
+  #about .animated-img{
+    width: 40ch;
+    margin: auto;
+  }
 }
 
 @media (max-width: 330px) {
@@ -775,6 +787,10 @@ header .intro-text{
   header .intro-text{
     padding-top: 200px;
     padding-bottom: 100px;
+  }
+  #about .animated-img{
+    width: 35ch;
+    margin: auto;
   }
 }
 

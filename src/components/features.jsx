@@ -1,9 +1,35 @@
 
+import { useRef, useState } from "react";
+import { useSpring, animated, config } from "@react-spring/web";
+
+
+
+
+const calc = (x, y, rect) => [
+  -(y - rect.top - rect.height / 2) / 7,
+  (x - rect.left - rect.width / 2) / 7,
+  1
+];
+const AnimFeTurbulence = animated('feTurbulence');
+const AnimFeDisplacementMap = animated('feDisplacementMap');
+const trans = (x, y, s) =>
+  `perspective(700px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+
 
 export const Features = (props) => {
+  const [open, toggle] = useState(false)
+  const [{  opacity }] = useSpring(() => ({
+    reverse: open,
+    from: {  opacity: 0, },
+    to: {  opacity: 1,},
+    config: { duration: 3500 },
+  }))
   return (
     <div id='features' >
       <div className='container'>
+      <div  onClick={() => toggle(!open)}>
+            <animated.div  style={{  opacity }} viewBox="0 0 1278 446">
+            
         <div className='col-md-10 col-md-offset-1 section-title text-center'>
           <h2>FAVORIT - ¡MÁS DE 15 AÑOS DE PERFECTA CALIDAD!</h2>
         </div>
@@ -35,22 +61,42 @@ export const Features = (props) => {
               ))
             : 'Loading...'}
         </div>
+            </animated.div>
+            </div>
       </div>
     </div>
   )
 }
-export const AboutHome= (props) => {
+export const AboutHome= () => {
+
+  
+  const ref = useRef(null);
+  const [xys, set] = useState([0, 0, 1]);
+  
+  const props = useSpring({ xys });
+
   return (
     <div id="about">
       <div className="container">
         <div className="row">
-          <div className="col-xs-12 col-md-6">
+          
+          <div className="col-xs-12 col-md-6" ref={ref}>
+          <animated.div 
+            className="animated-img"
+            style={{ transform: props.xys.to(trans) }} 
+            onMouseLeave={() => set([0, 0, 1])} 
+            onMouseMove={(e) => { 
+              const rect = ref.current.getBoundingClientRect(); set(calc(e.clientX, e.clientY, rect));
+            }}
+          >
             {" "}
             <img src="img/about.jpg" className="img-responsive" alt="" />{" "}
+          </animated.div>
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>Sobre nosotros</h2>
+            
+            <h2>Sobre nosotros</h2>
               <p className="about-p">LLC Eurasia Lubricants: empresa conjunta, cuyo enfoque principal es la producción de aceites y lubricantes para motores. <br /> <br />
                 La empresa fabrica productos bajo la marca «FAVORIT». La gama incluye más de 60 artículos: <br />
                 - aceites de motor; <br /> 
@@ -59,27 +105,9 @@ export const AboutHome= (props) => {
                 - aceites de lavado; <br />
                 - aceites para engranajes; <br />
                 - anticongelante y otros fluidos técnicos. <br /></p>
-              {/* <h3>Why Choose Us?</h3>
-              <div className="list-style">
-                <div className="col-lg-6 col-sm-6 col-xs-12">
-                  <ul>
-                    {props.data
-                      ? props.data.Why.map((d, i) => (
-                          <li key={`${d}-${i}`}>{d}</li>
-                        ))
-                      : "loading"}
-                  </ul>
-                </div>
-                <div className="col-lg-6 col-sm-6 col-xs-12">
-                  <ul>
-                    {props.data
-                      ? props.data.Why2.map((d, i) => (
-                          <li key={`${d}-${i}`}> {d}</li>
-                        ))
-                      : "loading"}
-                  </ul>
-                </div>
-              </div> */}
+          
+              
+             
             </div>
           </div>
         </div>
