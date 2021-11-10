@@ -275,6 +275,10 @@ header .intro-text {
 #about .animated-img{
   width: 60ch;
   margin: auto;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+#about .animated-img:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
 /* About Section */
 #about {

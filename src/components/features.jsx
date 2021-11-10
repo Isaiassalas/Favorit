@@ -90,7 +90,7 @@ export const AboutHome= () => {
             }}
           >
             {" "}
-            <img src="img/about.jpg" className="img-responsive" alt="" />{" "}
+            <img src="img/about.jpg" className="img-responsive shadow" alt="" />{" "}
           </animated.div>
           </div>
           <div className="col-xs-12 col-md-6">

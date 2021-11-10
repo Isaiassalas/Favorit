@@ -8,7 +8,7 @@ export const Navigation = (props) => {
     <Spring 
     from={{opacity: 0, marginTop: -200}}
     to={{ opacity: 1, marginTop: 0, }}
-    delay={400}
+    delay={300}
     config={config.slow	}
     
     
