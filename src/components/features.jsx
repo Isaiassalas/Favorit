@@ -1,9 +1,5 @@
-
 import { useRef, useState } from "react";
 import { useSpring, animated, config } from "@react-spring/web";
-
-
-
 
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 7,
@@ -17,21 +13,22 @@ const trans = (x, y, s) =>
 
 
 export const Features = (props) => {
-  const [open, toggle] = useState(false)
+  const [state, toggle] = useState(true)
   const [{  opacity }] = useSpring(() => ({
-    reverse: open,
-    from: {  opacity: 0, },
-    to: {  opacity: 1,},
-    config: { duration: 3500 },
+    
+    from: {  opacity: 0 },
+    to: {  opacity: 1},
+    config: { duration: 7000 },
   }))
   return (
     <div id='features' >
       <div className='container'>
-      <div  onClick={() => toggle(!open)}>
+      <div  >
+        <div className='col-md-10 col-md-offset-1 section-title text-center'onClick={() => toggle(!state)}>
             <animated.div  style={{  opacity }} viewBox="0 0 1278 446">
             
-        <div className='col-md-10 col-md-offset-1 section-title text-center'>
           <h2>FAVORIT - ¡MÁS DE 15 AÑOS DE PERFECTA CALIDAD!</h2>
+        </animated.div>
         </div>
         <div className='row'>
           {props.data
@@ -61,14 +58,20 @@ export const Features = (props) => {
               ))
             : 'Loading...'}
         </div>
-            </animated.div>
+            
             </div>
       </div>
     </div>
   )
 }
 export const AboutHome= () => {
-
+  const [state, toggle] = useState(true)
+  const [{  opacity }] = useSpring(() => ({
+    
+    from: {  opacity: 0 },
+    to: {  opacity: 1},
+    config: { duration: 7000 },
+  }))
   
   const ref = useRef(null);
   const [xys, set] = useState([0, 0, 1]);
@@ -95,8 +98,12 @@ export const AboutHome= () => {
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-            
+            <div onClick={() => toggle(!state)}>
+            <animated.div  style={{  opacity }} viewBox="0 0 1278 446">
+
             <h2>Sobre nosotros</h2>
+            </animated.div>
+            </div>
               <p className="about-p">LLC Eurasia Lubricants: empresa conjunta, cuyo enfoque principal es la producción de aceites y lubricantes para motores. <br /> <br />
                 La empresa fabrica productos bajo la marca «FAVORIT». La gama incluye más de 60 artículos: <br />
                 - aceites de motor; <br /> 

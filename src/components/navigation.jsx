@@ -6,10 +6,10 @@ import { Spring, config, animated} from "react-spring";
 export const Navigation = (props) => {
   return (
     <Spring 
-    from={{opacity: 0, marginTop: -200}}
-    to={{ opacity: 1, marginTop: 0, }}
-    delay={300}
-    config={config.slow	}
+    from={{opacity: 0, marginTop: -300}}
+    to={{ opacity: 1, marginTop: 0 }}
+    delay={350}
+    config={config.molasses	}
     
     
     >
