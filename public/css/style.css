@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -255,6 +255,7 @@ header .intro-text {
 
 /* Features Section */
 #features {
+  font-family: 'Merriweather', serif;
   background: #f6f6f6;
   padding: 0px 45px;
 }
@@ -270,8 +271,23 @@ header .intro-text {
   background: linear-gradient(to right, #990000 0%, #710101 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
+#features p{
+  font-family: 'Merriweather', serif;
+}
+#features .texto{
+  font-size: 15px;
+  text-align: justify;
+  line-height: 26px;
+}
+#features h3{
+  font-size: 19px;
+  font-family: 'Merriweather', serif;
+  text-align: justify;
+  line-height: 25px;
+}
 #about .about-p{
-  font-size: 18px;
+  font-size: 17px;
+  font-family: 'Merriweather', serif;
 }
 #about .animated-img{
   width: 60ch;

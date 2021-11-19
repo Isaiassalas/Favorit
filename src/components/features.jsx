@@ -35,20 +35,20 @@ export const Features = (props) => {
             ? props.data.map((d, i) => (
                 <div key={`${d.title}-${i}`} className='col-xs-12'>
                   {' '}
-                  <p>{d.titlep}</p>
-                  <p>{d.textp}</p>
+                  <p className="texto">{d.titlep}</p>
+                  <p className="texto">{d.textp}</p>
                   <h3>{d.title}</h3>
-                  <p>{d.text}</p>
+                  <p className="texto">{d.text}</p>
                   <h3>{d.title}</h3>
-                  <p>{d.text2}</p>
+                  <p className="texto">{d.text2}</p>
                   <h3>{d.title}</h3>
-                  <p>{d.text3}</p>
+                  <p className="texto">{d.text3}</p>
                   <h3>{d.title}</h3>
-                  <p>{d.text4}</p>
+                  <p className="texto">{d.text4}</p>
                   <h3>{d.title}</h3>
-                  <p>{d.text5}</p>
+                  <p className="texto">{d.text5}</p>
                   <h3>{d.title}</h3>
-                  <p>{d.text6}</p>
+                  <p className="texto">{d.text6}</p>
                   <div className='col-md-10 col-md-offset-1 section-title text-center text-danger'>
                   <p>{d.mensaje}</p>
           

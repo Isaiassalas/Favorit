@@ -5,17 +5,15 @@ import { Spring, config, animated} from "react-spring";
 
 export const Navigation = (props) => {
   return (
+    <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
     <Spring 
-    from={{opacity: 0, marginTop: -300}}
+    from={{opacity: 0, marginTop: -200}}
     to={{ opacity: 1, marginTop: 0 }}
-    delay={350}
+    
     config={config.molasses	}
-    
-    
     >
       {styles => (
-        <animated.div style={styles}>
-            <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
+              <animated.div style={styles}>
       <div className='container'>
         <div className='navbar-header'>
           <button
@@ -65,10 +63,10 @@ export const Navigation = (props) => {
           
         </div>
       </div>
-    </nav>
         </animated.div>
       )}
     
     </Spring>
+    </nav>
   )
 }
