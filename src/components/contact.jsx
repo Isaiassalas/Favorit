@@ -1,7 +1,7 @@
 
 
 
-export const Testimonials = (props) => {
+export const Contact = (props) => {
   return (
     <div id='testimonials'>
       <div className='container'>

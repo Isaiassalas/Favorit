@@ -1,13 +1,13 @@
 import { useRef, useState } from "react";
-import { useSpring, animated, config } from "@react-spring/web";
+import { useSpring, animated } from "@react-spring/web";
 
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 7,
   (x - rect.left - rect.width / 2) / 7,
   1
 ];
-const AnimFeTurbulence = animated('feTurbulence');
-const AnimFeDisplacementMap = animated('feDisplacementMap');
+// const AnimFeTurbulence = animated('feTurbulence');
+// const AnimFeDisplacementMap = animated('feDisplacementMap');
 const trans = (x, y, s) =>
   `perspective(700px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 

@@ -1,0 +1,25 @@
+.background {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  height: 150%;
+  width: 100%;
+  grid-template-areas:
+    "countdown"
+    "logo"
+    "title"
+    "description"
+    "subscribe"
+    "social";
+  justify-items: center;
+  align-items: center;
+  color: #666;
+  margin-bottom: 0;
+  padding: 0;
+  
+}
+@media (max-width: 700px) {
+  .background{
+    height: 200%;
+  }
+}

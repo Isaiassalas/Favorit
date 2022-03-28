@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import {  Link } from "react-router-dom";
 import { Spring, config, animated} from "react-spring";
 
 export const Navigation = (props) => {
@@ -39,6 +38,9 @@ export const Navigation = (props) => {
         > 
         
             <ul className='nav navbar-nav navbar-right'>
+            <li>
+              <Link to="/blog" className="page-scroll">Blog</Link>
+              </li>
               <li>
               <Link to="/" className="page-scroll">Inicio</Link>
               

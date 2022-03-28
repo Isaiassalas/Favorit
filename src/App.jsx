@@ -7,11 +7,12 @@ import { AboutHome } from "./components/features";
 import { About } from "./components/about";
 import { Services } from "./components/services";
 import { Gallery } from "./components/gallery";
-import { Testimonials } from "./components/testimonials";
+import { Contact } from "./components/contact";
 import { Team } from "./components/Team";
 import { Noticias } from "./components/noticias";
 import { News } from "./components/lastnews";
 import { Footer } from "./components/footer";
+import  Blog  from "./components/blog";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 
@@ -21,6 +22,8 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
 });
+
+
 
 const Index = () => {
   const [landingPageData, setLandingPageData] = useState({});
@@ -42,6 +45,28 @@ const Index = () => {
       {/* <Testimonials data={landingPageData.Testimonials} />
       <Team data={landingPageData.Team} /> */}
       <Footer data={landingPageData.Footer} />
+    </div>
+  );
+};
+
+const Bloger = () => {
+  const [landingPageData, setLandingPageData] = useState({});
+  useEffect(() => {
+    setLandingPageData(JsonData);
+  }, []);
+
+  return (
+    
+    <div>
+      {/* <Navigation />
+      <Header data={landingPageData.Header} /> */}
+      <Blog data={landingPageData.Blog} />
+      {/* <AboutHome data={landingPageData.Features} />
+      <Services data={landingPageData.Services} /> */}
+      {/* <Gallery data={landingPageData.Gallery}/> */}
+      {/* <Testimonials data={landingPageData.Testimonials} />
+      <Team data={landingPageData.Team} /> */}
+      {/* <Footer data={landingPageData.Footer} /> */}
     </div>
   );
 };
@@ -145,7 +170,7 @@ const Contactanos = () => {
       {/* <About data={landingPageData.About} /> */}
       {/* <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery}/> */}
-      <Testimonials data={landingPageData.Testimonials} />
+      <Contact data={landingPageData.Contact} />
       
       {/* <Team data={landingPageData.Team} /> */}
      
@@ -159,7 +184,7 @@ function App() {
     <Router>
 
         <Navigation />
-        
+        <Route path="/blog" component={Bloger} />
         <Route path="/" exact component={Index} />
         <Route path="/about" component={Abouts} />
         <Route path="/catalogo" component={Catalogo} />

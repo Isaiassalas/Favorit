@@ -73,8 +73,9 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 0px;
   transition: all 0.8s;
+  margin-top: -150px;
 }
 
 #menu img{
@@ -552,7 +553,7 @@ iframe{
 }
 /* Contact Section */
 #footer {
-  padding: 100px 0 60px;
+  padding: 90px 0 60px;
   background: linear-gradient(to right, #800101 0%, #710101 100%);
   color: rgba(255, 255, 255, 0.75);
 }

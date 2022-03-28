@@ -1,0 +1,47 @@
+.logo-container {
+    grid-area: logo;
+    animation: logo-spin infinite 5s linear;
+    
+}
+
+.slow {
+  animation-play-state: paused;
+}
+
+.fast {
+  animation-play-state: running;
+}
+
+.logo {
+  position: relative;
+  margin-top: 30px;
+  animation: logo-spin infinite 20s linear;
+  height: 27vmin;
+  pointer-events: none;
+  
+}
+.logo-favotit {
+  
+  margin: 40px 0;
+  height: 10vmin;
+  pointer-events: none;
+  position: absolute;
+  left: -50px;
+  top: 55px;
+}
+
+
+@keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media (max-width: 500px) {
+    .logo-favotit{
+      left: -40px;
+      top: 45px;
+    }
+  }

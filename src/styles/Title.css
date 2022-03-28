@@ -1,0 +1,49 @@
+.title {
+  grid-area: title;
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+  max-width: 950px;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  color: #fff;
+}
+
+/*
+Thanks to Wes Bos for the gradient trick
+https://cssgrid.io
+*/
+.title:before,
+.title:after {
+  display: block;
+  content: "";
+  height: 10px;
+}
+
+.title:before {
+  background: linear-gradient(to left, #990000, transparent);
+}
+
+.title:after {
+
+  background: linear-gradient(to right,#990000, transparent);
+}
+.description {
+  overflow: hidden;
+  /* grid-area: description; */
+  display: grid;
+  font-size: 40px;
+  font-weight: 500;
+  max-width: 700px;
+  grid-template-columns: 1fr;
+  margin: 40px 0;
+  padding: 10px 0;
+}
+
+.description-text {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  font-size: 19px;
+  text-align: center;
+  color: #fff;
+}
