@@ -10,8 +10,6 @@ import logo from "../img/gear-with-holes.svg";
 // import check from "../images/check-mark.svg";
 import facebook from "../img/FB.png";
 import instagram from "../img/IG.png";
-import whassapp from "../img/WZP.png";
-import twitter from "../img/TT.png";
 import "../styles/ComingSoon.css";
 import "../styles/Title.css";
 
@@ -19,7 +17,7 @@ import "../styles/Title.css";
 class Blog extends Component {
   state = {
     countdown: {
-      countdownDate: "2022-03-30 00:00:00"
+      countdownDate: "2022-04-30 00:00:00"
     },
     logo: {
       alt: "Spinning Gear",
@@ -34,29 +32,20 @@ class Blog extends Component {
     //     "La plataforma de Favorit Blog estará en funcionamiento en breve. Suscríbase a nuestro boletín de noticias a continuación para recibir actualizaciones cuando haya nuevo material disponible."
     // },
     subscribe: {
-      placeholder: "Enter Email Address",
+      placeholder: "Ingrese su correo electronico",
+      placeholder2:"Ingrese su nombre",
       buttonText: "Enviar"
     },
     links: [
       {
-        url: "#",
+        url: "https://www.facebook.com/favoritvenezuela/",
         logo: facebook,
         text: "Unirse"
       },
       {
-        url: "#",
+        url: "https://instagram.com/favoritvenezuela?utm_medium=copy_link",
         logo: instagram,
         text: "Seguir"
-      },
-      {
-        url: "#",
-        logo: whassapp,
-        text: "Escribir"
-      },
-      {
-        url: "#",
-        logo: twitter,
-        text: "Tuitear"
       }
     ]
     // notification: {
@@ -124,7 +113,7 @@ class Blog extends Component {
         <Logo alt={logo.alt} src={logo.src} spinSpeed={logo.spinSpeed} />
         <h1 className="title">¡Proximamente!</h1>
         <div className="description">
-            <p className="description-text">La plataforma de Favorit Blog estará en funcionamiento en breve. Suscríbase a nuestro boletín de noticias a continuación para recibir actualizaciones cuando haya nuevo material disponible.</p>
+            <p className="description-text">La plataforma Favorit esta en construccion. Suscribete a nuestro sitio para recibir nuestras actualizaciones.</p>
         </div>
         
         {/* <Description
@@ -137,8 +126,8 @@ class Blog extends Component {
         /> */} 
         <Subscribe
           placeholder={subscribe.placeholder}
+          placeholder2={subscribe.placeholder2}
           buttonText={subscribe.buttonText}
-          
         />
         <Links links={links} />
     </div>
