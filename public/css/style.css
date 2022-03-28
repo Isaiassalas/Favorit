@@ -73,9 +73,9 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 0px;
+  padding: 14px;
   transition: all 0.8s;
-  margin-top: -150px;
+  /* margin-top: -150px; */
 }
 
 #menu img{
