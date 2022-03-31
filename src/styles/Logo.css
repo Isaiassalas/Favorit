@@ -14,19 +14,19 @@
 
 .logo {
   position: relative;
-  margin-top: 30px;
+  margin-top: 20px;
   animation: logo-spin infinite 20s linear;
-  height: 27vmin;
+  height: 20vmin;
   pointer-events: none;
   
 }
 .logo-favotit {
   
-  margin: 40px 0;
-  height: 10vmin;
+  margin: 9px 0;
+  height: 8vmin;
   pointer-events: none;
   position: absolute;
-  left: -50px;
+  left: -40px;
   top: 55px;
 }
 
@@ -41,7 +41,7 @@
   }
   @media (max-width: 500px) {
     .logo-favotit{
-      left: -40px;
+      left: -30px;
       top: 45px;
     }
   }
