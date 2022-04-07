@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Navigation } from "./components/navigation";
-// import { Header } from "./components/header";
-// import { Features } from "./components/features";
-// import { AboutHome } from "./components/features";
+import { Header } from "./components/header";
+import { Features } from "./components/features";
+import { AboutHome } from "./components/features";
 import { About } from "./components/about";
-// import { Services } from "./components/services";
+import { Services } from "./components/services";
 import { Gallery } from "./components/gallery";
 import { Contact } from "./components/contact";
 import { Team } from "./components/Team";
 import { Noticias } from "./components/noticias";
-// import { News } from "./components/lastnews";
+import { News } from "./components/lastnews";
 import { Footer } from "./components/footer";
-import  Blog  from "./components/blog";
+import  {Blog}  from "./components/blog";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 
@@ -34,16 +34,16 @@ const Index = () => {
   return (
     
     <div>
-      <Navigation />
-      {/* <Header data={landingPageData.Header} />
+      
+      <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <AboutHome data={landingPageData.Features} />
       
       <Services data={landingPageData.Services} />
-      <News data={landingPageData.News} /> */}
-      <Blog data={landingPageData.Blog}/>
+      <News data={landingPageData.News} />
+      {/* <Blog data={landingPageData.Blog}/> */}
       
-      {/* <Footer data={landingPageData.Footer} /> */}
+      <Footer data={landingPageData.Footer} />
     </div>
   );
 };
@@ -65,7 +65,7 @@ const Bloger = () => {
       {/* <Gallery data={landingPageData.Gallery}/> */}
       {/* <Testimonials data={landingPageData.Testimonials} />
       <Team data={landingPageData.Team} /> */}
-      {/* <Footer data={landingPageData.Footer} /> */}
+      <Footer data={landingPageData.Footer} />
     </div>
   );
 };

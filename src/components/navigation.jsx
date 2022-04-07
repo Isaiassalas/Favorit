@@ -1,5 +1,6 @@
 import React from "react";
-// import {  Link } from "react-router-dom";
+import { BrowserRouter as Router,  Link } from "react-router-dom";
+
 import { Spring, config, animated} from "react-spring";
 
 export const Navigation = (props) => {
@@ -37,9 +38,10 @@ export const Navigation = (props) => {
           id='bs-example-navbar-collapse-1'
         > 
         
-            {/* <ul className='nav navbar-nav navbar-right'>
+            <ul className='nav navbar-nav navbar-right'>
             <li>
               <Link to="/blog" className="page-scroll">Blog</Link>
+              
               </li>
               <li>
               <Link to="/" className="page-scroll">Inicio</Link>
@@ -61,7 +63,7 @@ export const Navigation = (props) => {
               <li>
               <Link to="/contactanos" className="page-scroll">Contactanos</Link>
               </li>
-            </ul> */}
+            </ul>
           
         </div>
       </div>

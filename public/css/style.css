@@ -73,9 +73,8 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 14px;
+  padding: 15px;
   transition: all 0.8s;
-  /* margin-top: -150px; */
 }
 
 #menu img{
@@ -253,6 +252,97 @@ header .intro-text {
   padding-bottom: 200px;
   text-align: center;
 }
+/* Blog Section */
+#blog {
+  padding: 100px 0;
+}
+.articulo{
+  overflow: hidden;
+  background: linear-gradient(to right, #DFDFDF 0%, #D3D3D3 100%);
+  text-align: center;
+  /* border-bottom: 3px solid #990000; */
+  
+}
+.content:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(to right, #710101 0%, #990000 100%);
+  content: "";
+  transition: width 0.2s;
+}
+.content:hover:after {
+  width: 100%;
+}
+.btn-compartir{
+  
+  
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #710101;
+  background-image: linear-gradient(to right, #710101 0%, #990000 100%);
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  margin: 7px 0;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s linear;
+  border: 0;
+  
+  
+}
+.t-blog{
+  font-size: 30px;
+  padding: 30px;
+  text-align: left;
+}
+#blog .hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(70, 69, 69, 0.8) 100%
+  );
+  padding: 30% 0 0;
+  height: 55%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#blog .hover-bg .hover-text > p {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  
+  
+}
+#blog .hover-bg:hover .hover-text > p {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+#blog .hover-bg .hover-text{
+  padding: 5% ;
+  text-align: justify;
+}
+
+
+#blog .hover-bg:hover .hover-text {
+  opacity: 1;
+}
+
+
 
 /* Features Section */
 #features {
@@ -486,6 +576,27 @@ header .intro-text {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
+.hover-bg .hover-text > p {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  
+  
+}
+.hover-bg:hover .hover-text > p {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.articulo .hover-bg .hover-text{
+  padding: 5% ;
+  text-align: justify;
+}
+
+
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
@@ -553,7 +664,7 @@ iframe{
 }
 /* Contact Section */
 #footer {
-  padding: 90px 0 60px;
+  padding: 100px 0 60px;
   background: linear-gradient(to right, #800101 0%, #710101 100%);
   color: rgba(255, 255, 255, 0.75);
 }

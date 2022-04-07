@@ -3,7 +3,11 @@ import React from "react";
 
 import "../../styles/Links.css";
 
+
+
 const Links = ({ links }) => (
+
+  
   <div className="social-links">
     {links.map((link, i) => {
       return (
@@ -13,6 +17,7 @@ const Links = ({ links }) => (
           target="_blank"
           rel="noopener noreferrer"
           href={link.url}
+          
         >
           <img className="social-logo" src={link.logo}/>
           

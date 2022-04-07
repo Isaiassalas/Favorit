@@ -6,8 +6,7 @@ const calc = (x, y, rect) => [
   (x - rect.left - rect.width / 2) / 7,
   1
 ];
-// const AnimFeTurbulence = animated('feTurbulence');
-// const AnimFeDisplacementMap = animated('feDisplacementMap');
+
 const trans = (x, y, s) =>
   `perspective(700px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
