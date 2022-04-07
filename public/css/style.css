@@ -654,10 +654,39 @@ iframe{
 #team .team-img {
   width: 240px;
 }
+
 #team .thumbnail {
   background: transparent;
   border: 0;
 }
+.disponible > span{
+  position: absolute;
+  left: 25%;
+  opacity: 0;
+  color: #fff;
+  margin: 5px;
+  padding: 3px 12px;
+  border-radius: 50%;
+  border: 1px solid greenyellow;
+  background: rgba(0, 0, 0, 0.5);
+}
+ .hover:hover .disponible > span{
+  opacity: 1;
+} 
+.demanda > span{
+  position: absolute;
+  left: 25%;
+  opacity: 0;
+  color: #fff;
+  margin: 5px;
+  padding: 3px 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+  background: rgba(0, 0, 0, 0.5);
+}
+ .hover:hover .demanda > span{
+  opacity: 1;
+} 
 #team .thumbnail .caption {
   padding: 10px 0 0;
   color: #888;

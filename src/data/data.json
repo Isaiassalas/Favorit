@@ -136,41 +136,49 @@
  
   "Team": [
     {
+      "dispo": "Disponible",
       "img": "img/team/01.jpg",
       "name": "Aceite de motor de turismos",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "dispo": "Bajo demanda",
       "img": "img/team/02.jpg",
       "name": "aceites de motor para camiones",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "dispo": "Disponible",
       "img": "img/team/03.jpg",
       "name": "grasas",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "dispo": "Disponible",
       "img": "img/team/04.jpg",
       "name": "Aceites de motor según norma gost",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "dispo": "Bajo demanda",
       "img": "img/team/05.jpg",
       "name": "aceites industriales",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "dispo": "Bajo demanda",
       "img": "img/team/06.jpg",
       "name": "producción de contenedores",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "dispo": "Disponible",
       "img": "img/team/07.jpg",
       "name": "Aceites para motos, etc.",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "dispo": "Disponible",
       "img": "img/team/08.jpg",
       "name": "aceite de cadena",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
