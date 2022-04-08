@@ -101,8 +101,7 @@ export const Footer = (props) => {
                 <span>
                   <i className='fa fa-map-marker'></i> Dirección
                 </span>
-                        Distributor in the Russian Federation
-                        JSC "NLK" Moscow st. Saltykovskaya d8, office 302 A ind. 111673
+                Calle Constantino Maradey Casa N° 49, Caserio la Ponderosa, Barcelona Anzoategui zona postal 6001
               </p>
             </div>
             <div className='contact-item'>
@@ -110,10 +109,9 @@ export const Footer = (props) => {
                 <span>
                   <i className='fa fa-phone'></i> Telefono
                 </span>{' '}
-                General issues: 
-                tel/fax: +375(17) 516-65-11
-                Accounting and personnel: 
-                tel: +375(17) 510-88-31
+               
+                Accounting and personnel: <br />
+                tel: +1 941 323 1244 / +58 424 861 8436
               </p>
             </div>
             <div className='contact-item'>

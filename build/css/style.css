@@ -260,10 +260,42 @@ header .intro-text {
   overflow: hidden;
   background: linear-gradient(to right, #DFDFDF 0%, #D3D3D3 100%);
   text-align: center;
-  border-bottom: 3px solid #000;
+  /* border-bottom: 3px solid #990000; */
   
 }
-
+.content:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(to right, #710101 0%, #990000 100%);
+  content: "";
+  transition: width 0.2s;
+}
+.content:hover:after {
+  width: 100%;
+}
+.btn-compartir{
+  
+  
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #710101;
+  background-image: linear-gradient(to right, #710101 0%, #990000 100%);
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  margin: 7px 0;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s linear;
+  border: 0;
+  
+  
+}
 .t-blog{
   font-size: 30px;
   padding: 30px;
@@ -280,7 +312,7 @@ header .intro-text {
     rgba(70, 69, 69, 0.8) 100%
   );
   padding: 30% 0 0;
-  height: 70%;
+  height: 55%;
   width: 100%;
   opacity: 0;
   transition: all 0.5s;
@@ -622,10 +654,39 @@ iframe{
 #team .team-img {
   width: 240px;
 }
+
 #team .thumbnail {
   background: transparent;
   border: 0;
 }
+.disponible > span{
+  position: absolute;
+  left: 25%;
+  opacity: 0;
+  color: #fff;
+  margin: 5px;
+  padding: 3px 12px;
+  border-radius: 50%;
+  border: 1px solid greenyellow;
+  background: rgba(0, 0, 0, 0.5);
+}
+ .hover:hover .disponible > span{
+  opacity: 1;
+} 
+.demanda > span{
+  position: absolute;
+  left: 25%;
+  opacity: 0;
+  color: #fff;
+  margin: 5px;
+  padding: 3px 12px;
+  border-radius: 50%;
+  border: 1px solid red;
+  background: rgba(0, 0, 0, 0.5);
+}
+ .hover:hover .demanda > span{
+  opacity: 1;
+} 
 #team .thumbnail .caption {
   padding: 10px 0 0;
   color: #888;

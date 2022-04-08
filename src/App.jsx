@@ -13,8 +13,10 @@ import { Noticias } from "./components/noticias";
 import { News } from "./components/lastnews";
 import { Footer } from "./components/footer";
 import  {Blog}  from "./components/blog";
+import  Construc  from "./components/construc";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import { Navconstruc } from "./components/navconstruc";
 
 import "./App.css";
 
@@ -23,7 +25,23 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
   speedAsDuration: true,
 });
 
+const Construction = () => {
+  const [landingPageData, setLandingPageData] = useState({});
+  useEffect(() => {
+    setLandingPageData(JsonData);
+  }, []);
 
+  return (
+    
+    <div>
+        <Navconstruc /> 
+      
+      <Construc data={landingPageData.Construc}/>
+      
+     
+    </div>
+  );
+};
 
 const Index = () => {
   const [landingPageData, setLandingPageData] = useState({});
@@ -183,8 +201,10 @@ function App() {
     <Router>
 
         <Navigation />
+
         <Route path="/blog" component={Bloger} />
-        <Route path="/" exact component={Index} />
+        <Route path="/index" component={Index} />
+        <Route path="/" exact component={Construction} />
         <Route path="/about" component={Abouts} />
         <Route path="/catalogo" component={Catalogo} />
         <Route path="/galeria" component={Galeria}/>
