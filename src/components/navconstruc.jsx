@@ -8,7 +8,7 @@ export const Navconstruc = (props) => {
     
       <div className='container'>
         <div className='navbar-header'>
-          <button
+          {/* <button
             type='button'
             className='navbar-toggle collapsed'
             data-toggle='collapse'
@@ -19,7 +19,7 @@ export const Navconstruc = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
-          </button>
+          </button> */}
           <a className=' page-scroll ' href='#page-top'>
           <img src="img/logo.png" className=""   alt="" />
           </a>{' '}

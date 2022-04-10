@@ -36,9 +36,9 @@ const Subscribe = ({
 
       const cargar = { Nombre:Nombre,Correo:Correo};
 
-     await fetch("http://localhost/Favorit/api/contact/guardar_datos.php/?insertar", {
+     await fetch("http://127.0.0.1:3000//Favorit/api/contact/guardar_datos.php/?insertar", {
         method:"POST",
-        body: JSON.stringify(cargar) 
+        body: JSON.stringify(cargar)    
         
       })
       

@@ -202,9 +202,9 @@ function App() {
 
         <Navigation />
 
+        <Route path="/" exact component={Construction} />
         <Route path="/blog" component={Bloger} />
         <Route path="/index" component={Index} />
-        <Route path="/" exact component={Construction} />
         <Route path="/about" component={Abouts} />
         <Route path="/catalogo" component={Catalogo} />
         <Route path="/galeria" component={Galeria}/>
