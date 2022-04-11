@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router,  Link } from "react-router-dom";
-
+import {   Link } from "react-router-dom";
+// BrowserRouter as Router,
 import { Spring, config, animated} from "react-spring";
 
 export const Navigation = (props) => {

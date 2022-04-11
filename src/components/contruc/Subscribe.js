@@ -35,18 +35,19 @@ const Subscribe = ({
     e.preventDefault();
 
       const cargar = { Nombre:Nombre,Correo:Correo};
-
-     await fetch("http://127.0.0.1:3000//Favorit/api/contact/guardar_datos.php/?insertar", {
+      const url = 'http://localhost/Favorit/api/contact/guardar_datos.php';
+     await fetch(url, {
+        mode: 'cors',
+        credentials: 'same-origin',
         method:"POST",
         body: JSON.stringify(cargar)    
         
       })
+      .catch(err => console.log(err))
       
       setState({ Nombre:"", Correo: "" });
      
         alert("Correo enviado correctamente")
-      
-      
       
     };
     

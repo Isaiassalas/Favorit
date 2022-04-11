@@ -26,10 +26,8 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const Construction = () => {
-  const [landingPageData, setLandingPageData] = useState({});
-  useEffect(() => {
-    setLandingPageData(JsonData);
-  }, []);
+  const [landingPageData, ] = useState({});
+  
 
   return (
     
@@ -204,7 +202,7 @@ function App() {
 
         <Route path="/" exact component={Construction} />
         <Route path="/blog" component={Bloger} />
-        <Route path="/index" component={Index} />
+        <Route path="/inicio" component={Index} />
         <Route path="/about" component={Abouts} />
         <Route path="/catalogo" component={Catalogo} />
         <Route path="/galeria" component={Galeria}/>
