@@ -13,6 +13,8 @@ import "../styles/ComingSoon.css";
 import "../styles/Title.css";
 
 
+
+
 class Construc extends Component {
   state = {
     countdown: {
@@ -128,6 +130,7 @@ class Construc extends Component {
           placeholder2={subscribe.placeholder2}
           buttonText={subscribe.buttonText}
         />
+         
         <Links links={links} />
     </div>
     );

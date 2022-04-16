@@ -3,7 +3,7 @@ import {   Link } from "react-router-dom";
 // BrowserRouter as Router,
 import { Spring, config, animated} from "react-spring";
 
-export const Navigation = (props) => {
+export const Navigation = () => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
     <Spring 
@@ -44,7 +44,7 @@ export const Navigation = (props) => {
               
               </li>
               <li>
-              <Link to="/index" className="page-scroll">Inicio</Link>
+              <Link to="/inicio" className="page-scroll">Inicio</Link>
               
               </li>
               <li>

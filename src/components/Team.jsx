@@ -2,9 +2,7 @@
 
 
 export const Team = (props) => {
-  if ('span'=== 'Disponible') {
-    
-  }
+  
   return (
     <div id='team' className='text-center'>
       <div className='container'>

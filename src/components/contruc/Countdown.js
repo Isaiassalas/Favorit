@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import PropTypes from "prop-types";
 import moment, { duration } from "moment";
 import useInterval from "react-useinterval";
@@ -45,9 +45,9 @@ const Countdown = ({ countdownDate }) => {
     setCountdown();
   }, 1000);
 
-  useEffect(() => {
-    setCountdown();
-  });
+  // useEffect(() => {
+  //   setCountdown();
+  // });
 
   return (
     <div className="countdown">

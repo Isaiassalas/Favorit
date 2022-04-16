@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../../styles/Subscribe.css";
+import Modal from "./Modal";
+import axios from 'axios';
+
 
 const Subscribe = ({
   placeholder,
@@ -8,10 +11,14 @@ const Subscribe = ({
   
   
 }) => {
-
+  const [modalInsertar, setModalInsertar]= useState(false);
+  
+  const toggle = () => {
+    setModalInsertar(!modalInsertar);
+  }
   const [state, setState] = useState({
-    Nombre:"",
-    Correo:""
+    Nombre:'',
+    Correo:''
     
   });
   
@@ -30,33 +37,33 @@ const Subscribe = ({
     
   };
   const {Nombre,Correo} = state;
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-      const cargar = { Nombre:Nombre,Correo:Correo};
-      const url = 'http://localhost/Favorit/api/contact/guardar_datos.php';
-     await fetch(url, {
-        mode: 'cors',
-        credentials: 'same-origin',
-        method:"POST",
-        body: JSON.stringify(cargar)    
-        
-      })
-      .catch(err => console.log(err))
-      
-      setState({ Nombre:"", Correo: "" });
-     
-        alert("Correo enviado correctamente")
-      
-    };
+  const [data, setData]=useState([]);
+  const handleSubmit=async()=>{
     
+      
+    const baseUrl="http://localhost/Favorit/api/contact/";
+    var f = new FormData();
+    f.append("Nombre", Nombre);
+    f.append("Correo", Correo);
+    f.append("METHOD", "POST");
+    await axios.post(baseUrl, f)
+    .then(response=>{
+      
+      setData(data.concat(response.data));
+    })
+    .catch(error=>{
+      console.log(error);
+    })
+
+  }
+  
 
     
   
 
 
   return (
+    <div>
     <form className="subscribe" onSubmit={handleSubmit}>
       
       <input
@@ -79,10 +86,22 @@ const Subscribe = ({
         aria-label="Correo Electronico"
         required
       />
-      <button className="subscribe-button" type="submit">
+      <button className="subscribe-button" onClick={toggle} type="submit">
         {buttonText}
       </button>
+    
     </form>
+    
+      
+    <Modal  isOpen={modalInsertar} toggle={toggle} >
+    <h3>Mensaje</h3>
+
+        <h4> Información enviada correctamente </h4>
+        
+      </Modal>
+      
+    </div>
+    
   );
 };
 

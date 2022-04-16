@@ -12,7 +12,7 @@ import { Team } from "./components/Team";
 import { Noticias } from "./components/noticias";
 import { News } from "./components/lastnews";
 import { Footer } from "./components/footer";
-import  {Blog}  from "./components/blog";
+import  { Blog }  from "./components/blog";
 import  Construc  from "./components/construc";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -26,7 +26,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const Construction = () => {
-  const [landingPageData, ] = useState({});
+ 
   
 
   return (
@@ -34,7 +34,7 @@ const Construction = () => {
     <div>
         <Navconstruc /> 
       
-      <Construc data={landingPageData.Construc}/>
+      <Construc />
       
      
     </div>
