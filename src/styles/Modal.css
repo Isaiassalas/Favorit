@@ -9,6 +9,7 @@
     display: none;
     justify-content: center;
     align-items: center;
+    transition-delay: 1s;
   }
   
   .modal-container {
@@ -16,16 +17,18 @@
     padding: 1rem;
     min-width: 320px;
     max-width: 480px;
-    min-height: 200px;
-    max-height: 600px;
+    min-height: 120px;
+    max-height: 200px;
     overflow-y: auto;
-    background-color: #fff;
+    background-color: rgb(214, 214, 214);
   }
   
   .modal-close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 2px;
+    right: 2px;
+    background: #990000;
+    color: #fff;
   }
   
   .modal.is-open {

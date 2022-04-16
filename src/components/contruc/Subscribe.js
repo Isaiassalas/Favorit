@@ -38,10 +38,9 @@ const Subscribe = ({
   };
   const {Nombre,Correo} = state;
   const [data, setData]=useState([]);
-  const handleSubmit=async()=>{
-    
-      
-    const baseUrl="http://localhost/Favorit/api/contact/";
+  const handleSubmit=async(e)=>{
+    e.preventDefault();
+    const baseUrl="http://localhost/Favorit/api/";
     var f = new FormData();
     f.append("Nombre", Nombre);
     f.append("Correo", Correo);
@@ -50,6 +49,8 @@ const Subscribe = ({
     .then(response=>{
       
       setData(data.concat(response.data));
+      setState({ Nombre:"", Correo: "" });
+      toggle();
     })
     .catch(error=>{
       console.log(error);
@@ -86,7 +87,7 @@ const Subscribe = ({
         aria-label="Correo Electronico"
         required
       />
-      <button className="subscribe-button" onClick={toggle} type="submit">
+      <button className="subscribe-button"  type="submit">
         {buttonText}
       </button>
     
@@ -94,9 +95,9 @@ const Subscribe = ({
     
       
     <Modal  isOpen={modalInsertar} toggle={toggle} >
-    <h3>Mensaje</h3>
+    
 
-        <h4> Información enviada correctamente </h4>
+        <h4 style={{textAlign:'center', margin:'13% 0%'}}>Su información fue enviada correctamente </h4>
         
       </Modal>
       
