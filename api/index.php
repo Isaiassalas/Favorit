@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
         $resultado=metodoGet($query);
         echo json_encode($resultado->fetchAll()); 
     }
-    header("HTTP/1.1 200 OK");
+    header("HTTPS/1.1 200 OK");
     exit();
 }
 
@@ -26,7 +26,7 @@ if($_POST['METHOD']=='POST'){
     $queryAutoIncrement="select MAX(id) as id from datos";
     $resultado=metodoPost($query, $queryAutoIncrement);
     echo json_encode($resultado);
-    header("HTTP/1.1 200 OK");
+    header("HTTPS/1.1 200 OK");
     exit();
 }
 
@@ -53,7 +53,7 @@ if($_POST['METHOD']=='DELETE'){
     exit();
 }
 
-header("HTTP/1.1 400 Bad Request");
+header("HTTPS/1.1 400 Bad Request");
 
 
 ?>

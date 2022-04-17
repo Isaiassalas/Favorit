@@ -40,7 +40,7 @@ const Subscribe = ({
   const [data, setData]=useState([]);
   const handleSubmit=async(e)=>{
     e.preventDefault();
-    const baseUrl="http://localhost/Favorit/api/";
+    const baseUrl="https://localhost/Favorit/api/";
     var f = new FormData();
     f.append("Nombre", Nombre);
     f.append("Correo", Correo);
