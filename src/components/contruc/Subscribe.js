@@ -36,25 +36,29 @@ const Subscribe = ({
     })
     
   };
+  
   const {Nombre,Correo} = state;
   const [data, setData]=useState([]);
   const handleSubmit=async(e)=>{
     e.preventDefault();
-    const baseUrl="https://localhost/Favorit/api/";
+    const baseUrl="http://127.0.0.1:80/Favorit/api/";
     var f = new FormData();
     f.append("Nombre", Nombre);
     f.append("Correo", Correo);
     f.append("METHOD", "POST");
-    await axios.post(baseUrl, f)
-    .then(response=>{
+    var xhr = new XMLHttpRequest();
+  xhr.open("POST", baseUrl);
+  xhr.send(f);
+    // await axios.post(baseUrl, f)
+    // .then(response=>{
       
-      setData(data.concat(response.data));
+      // setData(data.concat(response.data));
       setState({ Nombre:"", Correo: "" });
       toggle();
-    })
-    .catch(error=>{
-      console.log(error);
-    })
+    // })
+    // .catch(error=>{
+    //   console.log(error);
+    // })
 
   }
   

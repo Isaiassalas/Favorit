@@ -6,11 +6,11 @@ header('Access-Control-Allow-Origin: *');
 
 if($_SERVER['REQUEST_METHOD']=='GET'){
     if(isset($_GET['id'])){
-        $query="select * from frameworks where id=".$_GET['id'];
+        $query="select * from datos where id=".$_GET['id'];
         $resultado=metodoGet($query);
         echo json_encode($resultado->fetch(PDO::FETCH_ASSOC));
     }else{
-        $query="select * from frameworks";
+        $query="select * from datos";
         $resultado=metodoGet($query);
         echo json_encode($resultado->fetchAll()); 
     }
@@ -53,7 +53,7 @@ if($_POST['METHOD']=='DELETE'){
     exit();
 }
 
-header("HTTPS/1.1 400 Bad Request");
+header("HTTP/1.1 400 Bad Request");
 
 
 ?>
