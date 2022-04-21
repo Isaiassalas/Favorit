@@ -110,8 +110,8 @@ export const Footer = (props) => {
                   <i className='fa fa-phone'></i> Telefono
                 </span>{' '}
                
-                Accounting and personnel: <br />
-                tel: +1 941 323 1244 / +58 424 861 8436
+                Numeros de télefono: <br />
+               +1 941 323 1244 / +58 424 861 8436
               </p>
             </div>
             <div className='contact-item'>

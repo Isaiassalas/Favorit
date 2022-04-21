@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
+
+
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 7,
   (x - rect.left - rect.width / 2) / 7,
@@ -20,6 +22,7 @@ export const Features = (props) => {
     config: { duration: 7000 },
   }))
   return (
+    <div>
     <div id='features' >
       <div className='container'>
       <div  >
@@ -60,7 +63,12 @@ export const Features = (props) => {
             
             </div>
       </div>
+     
     </div>
+    <div className="rrss">
+    
+</div>
+</div>
   )
 }
 export const AboutHome= () => {
@@ -79,6 +87,7 @@ export const AboutHome= () => {
 
   return (
     <div id="about">
+       
       <div className="container">
         <div className="row">
           
@@ -118,6 +127,7 @@ export const AboutHome= () => {
           </div>
         </div>
       </div>
+     
     </div>
   );
 };

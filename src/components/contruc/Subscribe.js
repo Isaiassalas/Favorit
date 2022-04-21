@@ -46,19 +46,19 @@ const Subscribe = ({
     f.append("Nombre", Nombre);
     f.append("Correo", Correo);
     f.append("METHOD", "POST");
-    var xhr = new XMLHttpRequest();
-  xhr.open("POST", baseUrl);
-  xhr.send(f);
-    // await axios.post(baseUrl, f)
-    // .then(response=>{
+  //   var xhr = new XMLHttpRequest();
+  // xhr.open("POST", baseUrl);
+  // xhr.send(f);
+    await axios.post(baseUrl, f)
+    .then(response=>{
       
-      // setData(data.concat(response.data));
+      setData(data.concat(response.data));
       setState({ Nombre:"", Correo: "" });
       toggle();
-    // })
-    // .catch(error=>{
-    //   console.log(error);
-    // })
+    })
+    .catch(error=>{
+      console.log(error);
+    })
 
   }
   

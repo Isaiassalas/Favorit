@@ -17,6 +17,8 @@ import  Construc  from "./components/construc";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import { Navconstruc } from "./components/navconstruc";
+import Slider from './components/slider/Slider';
+import slides from './data/slides';
 
 import "./App.css";
 
@@ -54,7 +56,7 @@ const Index = () => {
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <AboutHome data={landingPageData.Features} />
-      
+      <Slider slides={slides} />
       <Services data={landingPageData.Services} />
       <News data={landingPageData.News} />
       {/* <Blog data={landingPageData.Blog}/> */}

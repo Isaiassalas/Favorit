@@ -22,9 +22,15 @@ https://cssgrid.io
 }
 
 .title:before {
-  background: linear-gradient(to left, #990000, transparent);
+  background: linear-gradient(to left, #990000,transparent);
 }
-
+.rrss{
+  width: 100%;
+  height: 50px;
+ 
+  background: linear-gradient(0.85turn,transparent , #990000, transparent);
+}
+           
 .title:after {
 
   background: linear-gradient(to right,#990000, transparent);
