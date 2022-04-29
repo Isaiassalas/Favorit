@@ -18,13 +18,14 @@ const StyledDiv= styled.div`
         display: none;
     }
 
-    botton{
+    button{
         position: relative;
         pointer-events:auto;
         padding:5px;
         display: flex;
         align-items: center;
-        
+        background: rgba(0, 0, 0, 0);
+        border:0;
         &:nth-child(1) {
             transform: rotate(180deg);
             left: calc(${p => (100 - p.slideWidth) / 2}vw - 35px);
@@ -65,9 +66,8 @@ const StyledDiv= styled.div`
        
     }
     div.slider:hover &{
-        botton{
+        button{
             div{
-
                 opacity:1;
             }
         }
@@ -90,20 +90,20 @@ const Controls =(props)=> {
     })
 return (
             <StyledDiv {...props}>
-                <botton onClick={props.prev}>
+                <button onClick={props.prev}>
                     <div>
                         <span>
                             <Chevron/>
                         </span>
                     </div>
-                </botton>
-                <botton onClick={props.next}>
+                </button>
+                <button onClick={props.next}>
                     <div>
                         <span>
                             <Chevron/>
                         </span>
                     </div>
-                </botton>
+                </button>
             </StyledDiv>
 );
 }

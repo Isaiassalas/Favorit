@@ -55,7 +55,7 @@ const Index = () => {
       
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
-      <AboutHome data={landingPageData.Features} />
+      {/* <AboutHome data={landingPageData.Features} /> */}
       <Slider slides={slides} />
       <Services data={landingPageData.Services} />
       <News data={landingPageData.News} />

@@ -1,7 +1,7 @@
 
 
-
 export const Services = (props) => {
+  
   return (
     <div>
 
@@ -14,27 +14,39 @@ export const Services = (props) => {
         </div>
         <div className='row'>
         <div className='portfolio-items'>
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} >
-                  {' '}
-
-                    <h3 className=' text-danger'>{d.name}</h3>
-                    <p>{d.text}</p>
-
-                  </div>
+             
                 
-              ))
-            : 'loading'}
+                  
+                <div id='row'>
+            {props.data
+            
+              ? props.data.map((d, i) => (
+                
+                  <div key={`${d.name}-${i}`} className='col-md-3 col-sm-6 team hover visible'>
+                    
+                    <div className='thumbnail'>
+                      <div className={d.dispo === 'Disponible' ? 'disponible': 'demanda' }>
+                      <span >{d.dispo}</span>
+                      </div>
+                      {' '}
+                      <img src={d.img} alt='...' className= 'team-img' />
+                      <div className='caption'>
+                        <h4>{d.name}</h4>
+                        <p className="price">PRECIO: {d.price}$</p>
+                        <p>{d.job}</p>
+                        <a href="/catalogo" className='btn btn-compartir '>MAS INFORMACION</a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                ))
+              : 'loading'}
+          </div>
+                
         </div>
         </div>
       </div>
     </div>
-    </div>
-    
-   
-
-       
-    
+    </div> 
   )
 }

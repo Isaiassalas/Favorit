@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 
 
@@ -21,7 +22,6 @@ const Links = ({ links }) => (
         >
           <img className="social-logo" src={link.logo}/>
           
-            
           <span className="social-text">{link.text}</span>
         </a>
       );

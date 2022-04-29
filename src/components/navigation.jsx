@@ -29,7 +29,7 @@ export const Navigation = () => {
             <span className='icon-bar'></span>{' '}
           </button>
           <a className='page-scroll' href='#top'>
-          <img src="img/logo.png" className=""   alt="" />
+          <img src="img/logo.png"   alt="" />
           </a>{' '}
         </div>
 
@@ -61,7 +61,7 @@ export const Navigation = () => {
               </li>
               
               <li>
-              <Link to="/contactanos" className="page-scroll">Contactanos</Link>
+              <Link to="/contactanos" className="page-scroll">Distribuidores</Link>
               </li>
             </ul>
           

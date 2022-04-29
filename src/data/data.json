@@ -96,24 +96,36 @@
   ],
   "Services": [
     {
-      
-      "name": "Favorit Moto 4T SAE 20W-50 API SG / CD Favorit Moto 4T SAE 20W-50 API SG / CD ",
-      "text": "Es un aceite de motor mineral diseñado para su uso en cuatro str…"
+      "categoria":"aceites",
+      "price":"70.99",
+      "dispo": "Disponible",
+      "img": "img/team/08.jpg",
+      "name": "Aceite de cadena",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
-     
-      "name": "Favorit LITOL-24 MP2 / 3",
-      "text": "Grasa de litio multiusos, a base de aceites minerales refinados, contiene antioxidantes especiales…"
+      "categoria":"aceites",
+      "price":"30.88",
+      "dispo": "Disponible",
+      "img": "img/team/01.jpg",
+      "name": "Aceite de motor de turismos",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
-     
-      "name": "Favorit Premium DPF SAE 5W-30 API SN / CF",
-      "text": "Aceite de motor sintético diseñado para su uso en vehículos con motor de gasolina y diésel ..."
+      "categoria":"aceites",
+      "price":"50",
+      "dispo": "Bajo demanda",
+      "img": "img/team/02.jpg",
+      "name": "Aceites de motor para camiones",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
-     
-      "name": "Favorit Multi SL SAE 15W-40 API SL / CF",
-      "text": "Aceite de motor multigrado multiusos con base mineral altamente purificada para gasolina moderna ..."
+      "categoria":"aceites",
+      "price":"50.55",
+      "dispo": "Disponible",
+      "img": "img/team/04.jpg",
+      "name": "Aceites de motor según norma gost",
+      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     }
 
   ],
@@ -121,14 +133,38 @@
     {
       
       "name": "Contactos del fabricante",
-      "text": "LLC “Eurasia Lubricants”1 Zavodskaya Street, build.3, Zaslavl, 223034, región de Minsk. Coordenadas: 54.015345930936284,27.267377122085968",
-      "subname": "Asuntos Generales: ",
-      "tel": "tel/fax: +375(17) 516-65-11 ", 
-      "email": "e-mail: info@company.com",
-      "info": "Datos de contacto:",
-      "ubicacion": " Calle Constantino Maradey Casa N° 49, Caserio la Ponderosa, Barcelona Anzoategui zona postal 6001",
-      "imgubi": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.676894041338!2d-64.64860261635589!3d10.080367903307907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2d6db824793249%3A0xd8700d2a3ab3d035!2sUrbanizaci%C3%B3n%20Constantino%20Maradei%20I!5e0!3m2!1ses!2sve!4v1649382015337!5m2!1ses!2sve",
-      "phone":"Teléfonos Generales: +1 941 323 1244 / +58 424 861 8436" 
+      "tel": " +375(17) 516-65-11 ",
+      "direction":"Dirección", 
+      "email": " info@company.com",
+      "ubicacion": " Calle Constantino Maradey Casa N° 49, Caserio la Ponderosa, Barcelona Anzoategui zona postal 6001"
+      
+    },
+    {
+      
+      "name": "Contactos del fabricante",
+      "tel": " +375(17) 516-65-11 ",
+      "direction":"Dirección", 
+      "email": "info@company.com",
+      "ubicacion": " Calle Constantino Maradey Casa N° 49, Caserio la Ponderosa, Barcelona Anzoategui zona postal 6001"
+      
+    },
+    {
+      
+      "name": "Contactos del fabricante",
+      "tel": " +375(17) 516-65-11 ",
+      "direction":"Dirección", 
+      "email": "info@company.com",
+      "ubicacion": " Calle Constantino Maradey Casa N° 49, Caserio la Ponderosa, Barcelona Anzoategui zona postal 6001"
+      
+    },
+    {
+      
+      "name": "Contactos del fabricante",
+      "tel": "+375(17) 516-65-11 ",
+      "direction":"Dirección", 
+      "email": " info@company.com",
+      "ubicacion": " Calle Constantino Maradey Casa N° 49, Caserio la Ponderosa, Barcelona Anzoategui zona postal 6001"
+      
     }
    
     
@@ -136,53 +172,70 @@
  
   "Team": [
     {
+      "categoria":"aceites",
+      "price":"30.88",
       "dispo": "Disponible",
       "img": "img/team/01.jpg",
       "name": "Aceite de motor de turismos",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "categoria":"aceites",
+      "price":"50",
       "dispo": "Bajo demanda",
       "img": "img/team/02.jpg",
-      "name": "aceites de motor para camiones",
+      "name": "Aceites de motor para camiones",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "categoria":"grasas",
+      "price":"50.99",
       "dispo": "Disponible",
       "img": "img/team/03.jpg",
-      "name": "grasas",
+      "name": "Grasas",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "categoria":"aceites",
+      "price":"50.55",
       "dispo": "Disponible",
       "img": "img/team/04.jpg",
       "name": "Aceites de motor según norma gost",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "categoria":"aceites",
+      "price":"60.30",
       "dispo": "Bajo demanda",
       "img": "img/team/05.jpg",
-      "name": "aceites industriales",
+      "name": "Aceites industriales",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "categoria":"contenedores",
+      "price":"121",
       "dispo": "Bajo demanda",
       "img": "img/team/06.jpg",
-      "name": "producción de contenedores",
+      "name": "Producción de contenedores",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "categoria":"aceites",
+      "price":"50.80",
       "dispo": "Disponible",
       "img": "img/team/07.jpg",
       "name": "Aceites para motos, etc.",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     },
     {
+      "categoria":"aceites",
+      "price":"70.99",
       "dispo": "Disponible",
       "img": "img/team/08.jpg",
-      "name": "aceite de cadena",
+      "name": "Aceite de cadena",
       "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
     }
+    
   ],
   
   "Features": [

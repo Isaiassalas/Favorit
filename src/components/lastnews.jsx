@@ -4,7 +4,7 @@ export const News = (props) => {
   
       
       
-      <div id='services' className=''>
+      <div id='servicenew' className=''>
         <div className='container'>
           <div className='section-title text-center'>
             <h2>ÚLTIMAS NOTICIAS</h2>

@@ -44,7 +44,7 @@ export const Footer = (props) => {
                 Complete el siguiente formulario para enviarnos un correo electrónico y nos comunicaremos con usted lo antes posible.
                 </p>
               </div>
-              <form name='sentMessage' validate onSubmit={handleSubmit}>
+              <form name='sentMessage'  onSubmit={handleSubmit}>
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
