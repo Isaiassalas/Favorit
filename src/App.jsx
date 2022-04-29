@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
-import { AboutHome } from "./components/features";
+// import { AboutHome } from "./components/features";
 import { About } from "./components/about";
 import { Services } from "./components/services";
 import { Gallery } from "./components/gallery";
 import { Contact } from "./components/contact";
 import { Team } from "./components/Team";
 import { Noticias } from "./components/noticias";
-import { News } from "./components/lastnews";
+// import { News } from "./components/lastnews";
 import { Footer } from "./components/footer";
 import  { Blog }  from "./components/blog";
 import  Construc  from "./components/construc";
@@ -58,7 +58,7 @@ const Index = () => {
       {/* <AboutHome data={landingPageData.Features} /> */}
       <Slider slides={slides} />
       <Services data={landingPageData.Services} />
-      <News data={landingPageData.News} />
+      {/* <News data={landingPageData.News} /> */}
       {/* <Blog data={landingPageData.Blog}/> */}
       
       <Footer data={landingPageData.Footer} />

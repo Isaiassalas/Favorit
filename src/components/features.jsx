@@ -39,7 +39,7 @@ export const Features = (props) => {
                   {' '}
                   <p className="texto">{d.titlep}</p>
                   <p className="texto">{d.textp}</p>
-                  <h3>{d.title}</h3>
+                  {/* <h3>{d.title}</h3>
                   <p className="texto">{d.text}</p>
                   <h3>{d.title}</h3>
                   <p className="texto">{d.text2}</p>
@@ -50,7 +50,7 @@ export const Features = (props) => {
                   <h3>{d.title}</h3>
                   <p className="texto">{d.text5}</p>
                   <h3>{d.title}</h3>
-                  <p className="texto">{d.text6}</p>
+                  <p className="texto">{d.text6}</p> */}
                   <div className='col-md-10 col-md-offset-1 section-title text-center text-danger'>
                   <p>{d.mensaje}</p>
           

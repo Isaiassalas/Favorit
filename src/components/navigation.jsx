@@ -39,10 +39,10 @@ export const Navigation = () => {
         > 
         
             <ul className='nav navbar-nav navbar-right'>
-            <li>
+            {/* <li>
               <Link to="/blog" className="page-scroll">Blog</Link>
               
-              </li>
+              </li> */}
               <li>
               <Link to="/inicio" className="page-scroll">Inicio</Link>
               
@@ -53,12 +53,12 @@ export const Navigation = () => {
               <li>
               <Link to="/catalogo" className="page-scroll">Catalogo</Link>
               </li>
-              <li>
+              {/* <li>
               <Link to="/galeria" className="page-scroll">Galeria</Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
               <Link to="/noticias" className="page-scroll">Noticias</Link>
-              </li>
+              </li> */}
               
               <li>
               <Link to="/contactanos" className="page-scroll">Distribuidores</Link>
