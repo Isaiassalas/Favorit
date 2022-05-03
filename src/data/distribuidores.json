@@ -1,0 +1,41 @@
+{
+	"table": "distribuidores",
+	"Contact":[
+		{
+			"IdDistribuidor": 1,
+			"Nombre": "DISTRIBUIDOR 1",
+			"Contacto": "PEDRO PEREZ",
+			"RIF": "J-XXXXX-8",
+			"phone": "+58-2126312578",
+			"wzphone": "+584242431521",
+			"IgUrl": "alphaconduit",
+			"FbUrl": "alphaconduit",
+			"email": "email@demo.com",
+			"Latitud": null,
+			"Longitud": null,
+			"Fecha": "0000-00-00 00:00:00.000000",
+			"Data": 0,
+			"Aud_Creado": "2022-04-26 14:42:52.494978",
+			"Aud_Actualizado": "2022-04-26 14:43:33.278621",
+			"Aud_Borrado": 0
+		},
+		{
+			"IdDistribuidor": 2,
+			"Nombre": "Distribuidor 2",
+			"Contacto": "Maria Laura",
+			"RIF": "J-456789-8",
+			"phone": "+5898952258",
+			"wzphone": "+584242431521",
+			"IgUrl": "alphaconduit",
+			"FbUrl": "alphaconduit",
+			"email": "email@demo.com",
+			"Latitud": null,
+			"Longitud": null,
+			"Fecha": "2022-04-26 14:44:05.000000",
+			"Data": 0,
+			"Aud_Creado": "2022-04-26 14:44:06.000000",
+			"Aud_Actualizado": "2022-04-26 14:44:06.000000",
+			"Aud_Borrado": 0
+		}
+	]
+}

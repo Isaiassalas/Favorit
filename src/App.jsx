@@ -15,6 +15,9 @@ import { Footer } from "./components/footer";
 import  { Blog }  from "./components/blog";
 import  Construc  from "./components/construc";
 import JsonData from "./data/data.json";
+import JsonDat from "./data/distribuidores.json";
+import JsonCategori from "./data/categorias.json";
+import JsonProduct from "./data/productos.json";
 import SmoothScroll from "smooth-scroll";
 import { Navconstruc } from "./components/navconstruc";
 import Slider from './components/slider/Slider';
@@ -112,7 +115,7 @@ const Abouts = () => {
 const Catalogo = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
-    setLandingPageData(JsonData);
+    setLandingPageData( JsonProduct);
   }, []);
 
   return (
@@ -124,7 +127,7 @@ const Catalogo = () => {
       {/* <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery}/> */}
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
-      <Team data={landingPageData.Team} />
+      <Team productos={landingPageData.rows} />
       <Footer data={landingPageData.Footer} />
     </div>
   );
@@ -176,7 +179,7 @@ const Galeria = () => {
 const Contactanos = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
-    setLandingPageData(JsonData);
+    setLandingPageData(JsonDat);
   }, []);
 
   return (
@@ -187,7 +190,7 @@ const Contactanos = () => {
       {/* <About data={landingPageData.About} /> */}
       {/* <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery}/> */}
-      <Contact data={landingPageData.Contact} />
+      <Contact distribuidores={landingPageData.Contact} />
       
       {/* <Team data={landingPageData.Team} /> */}
      

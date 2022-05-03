@@ -111,7 +111,7 @@ export const Footer = (props) => {
                 </span>{' '}
                
                 Numeros de télefono: <br />
-               +1 941 323 1244 / +58 424 861 8436
+                +58 412-4022069
               </p>
             </div>
             <div className='contact-item'>
@@ -119,7 +119,7 @@ export const Footer = (props) => {
                 <span>
                   <i className='fa fa-envelope-o'></i> Correo Electronico
                 </span>{' '}
-                e-mail: info@favoritcars.by
+                e-mail:  Info@favoritvenezuela.com
 
               </p>
             </div>

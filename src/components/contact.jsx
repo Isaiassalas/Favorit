@@ -13,7 +13,7 @@ export const Contact = (props) => {
         </div>
         <div className='row '>
           <div className="container">
-            <table class="tabla" >
+            <table className="tabla table-responsive" >
               <thead >
                 <tr>
                   <th>NOMBRE</th>
@@ -24,38 +24,27 @@ export const Contact = (props) => {
                   <th>RRSS</th>
                 </tr>
               </thead>
-              {props.data
-            ? props.data.map((d, i) => (
-              <tbody key={`${d.name}-${i}`}>
+              <tbody >
+              {props.distribuidores
+            ? props.distribuidores.map((d, i) => (
                 
-                <tr>
-                  <td>{d.name}</td>
-                  <td>{d.tel}</td>
-                  <td>{d.direction}</td>
+                <tr key={`${d.Contacto}-${i}`}>
+                  <td>{d.Contacto}</td>
+                  <td>{d.phone}</td>
+                  <td>{d.RIF}</td>
                   <td>{d.email}</td>
-                  <td>{d.ubicacion}</td>
+                  <td>{d.Latitud}</td>
                   <td >
                     <img src={face} alt="facebook" width="25px"/>
                     <img src={insta} alt="facebook" width="25px"/>
                     <img src={twit} alt="facebook" width="25px"/>                 
                   </td>
                 </tr>
-                <tr>
-                  <td>{d.name}</td>
-                  <td>{d.tel}</td>
-                  <td>{d.direction}</td>
-                  <td>{d.email}</td>
-                  <td>{d.ubicacion}</td>
-                  <td >
-                  <img src={face} alt="facebook" width="25px"/>
-                  <img src={insta} alt="facebook" width="25px"/>
-                  <img src={twit} alt="facebook" width="25px"/>                 
-                  </td>
-                </tr>
+                
                        
-              </tbody>
                 ))
-            : 'loading'}        
+                : 'loading'}        
+                </tbody>
             </table>
           </div>
         </div>    

@@ -90,8 +90,30 @@ export const About = (props) => {
         <div className='col-md-8 col-md-offset-2 section-title text-center'>
           <h2 >cobertura</h2>
         </div>
+        <div className="col-md-3 col-sm-5  text-right "> 
+          <p><span style={{color:'red'}} >Oriente.</span> <br />
+           Anzoategui <br />
+           Sucre <br />
+           Monagas <br />
+           Bolivar</p>
 
-        <div className="col-xs-12 col-md-offset-1 col-md-5">
+          <p><span style={{color:'red'}} >Centro.</span> <br />
+          Aragua <br /> 
+          Carabobo <br />
+          Cojedes</p>
+
+          <p><span style={{color:'red'}} >Centro occidente.</span> <br />
+          Lara <br /> 
+          Yaracuy <br />
+          Portuguesa <br /> 
+          Barinas </p>
+
+          <p><span style={{color:'red'}} >Occidente.</span> <br />
+          Zulia</p>
+        
+        </div>
+        <div className="col-md-4 col-sm-5" >
+        
             {" "}
             <img src="img/M-venezuela.png" className="img-responsive" alt="" />{" "}
             <br />
@@ -109,11 +131,11 @@ export const About = (props) => {
               </ul>
               </div>
           </div>
-          <div className="col-xs-12 col-md-5">
+          <div className="col-md-4 col-sm-6  ">
             <div className="about-text">
-            <p>Operación en Venezuela</p>
+            <h3>Operación en Venezuela</h3>
 
-            <p> Empresa especializada en proveer soluciones tecnológicas y Distribución de Lubricantes. </p>
+            <p> "Empresa especializada en proveer soluciones tecnológicas y Distribución de Lubricantes." </p>
             <div>
             <p> 4 Oficinas <br />
                 3 Países (VENEZUELA, EEUU, COLOMBIA)<br />

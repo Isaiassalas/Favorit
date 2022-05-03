@@ -15,15 +15,17 @@ export const Team = (props) => {
     const opcion = e.target.id;
     
     setCategoria(opcion);
+
+    setDropdown(!dropdown);
   }
-  console.log(categoria);
+  
   return (
     <div id='team' className='text-center'>
       <div className='container'>
       
-        <div className='col-md-8 col-md-offset-2 section-title'>
+        <div className='col-md-9 col-md-offset-2 section-title'>
           <h2>Catalogo de productos</h2>
-          <div className='col-md-4 col-md-offset-11'>
+          <div className='col-md-3 col-md-offset-10'>
           <div className='filter'>
             <h5 >FILTRAR</h5>
             <div className="dropdown">
@@ -41,29 +43,28 @@ export const Team = (props) => {
           </div>
         </div>
           
-          <div id='row'>
-            {props.data
+          <div id='row '>
+            {props.productos
             
-              ? props.data.map((d, i) => (
+              ? props.productos.map((p, i) => (
                 
-                  <div key={`${d.name}-${i}`} className='col-md-4 col-sm-6 team hover visible'>
-                    <div className={categoria === d.categoria || categoria === "todos" ? '': 'ocultar' }>
-                      
+                  <div key={`${p.name}-${i}`} className={`col-md-2 col-sm-5 hover  ${categoria === p.categoria || categoria === "todos" ? 'visible' : 'ocultar'}` }>
                     
+
                     <div className='thumbnail'>
-                      <div className={d.dispo === 'Disponible' ? 'disponible': 'demanda' }>
-                      <span >{d.dispo}</span>
+                      <div className={p.dispo === 'Disponible' ? 'disponible': 'demanda' }>
+                      <span >{p.dispo}</span>
                       </div>
                       {' '}
-                      <img src={d.img} alt='...' className= 'team-img' />
+                      <img src={p.img} alt='...' className= 'team-img' />
                       <div className='caption'>
-                        <h4>{d.name}</h4>
-                        <p className="price">PRECIO: {d.price}$</p>
-                        <p>{d.job}</p>
+                        <h4>{p.name}</h4>
+                        <p className="price">PRECIO: {p.PrecioInicial}$</p>
+                        <p>{p.Descripcion}</p>
                         <a href="/catalogo" className='btn btn-compartir '>MAS INFORMACION</a>
                       </div>
                     </div>
-                    </div>
+                    
                   </div>
                 ))
               : 'loading'}

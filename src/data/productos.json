@@ -1,0 +1,118 @@
+{
+	"table": "productos",
+	"rows":
+	[
+		{
+			"IdProducto": 1,
+			"Marca": "Favorit",
+			"categoria":"aceites",
+			"dispo": "Disponible",
+			"img": "img/team/01.jpg",
+			"name": "Aceite de motor de turismos",
+			"Descripcion": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus",
+			"PrecioInicial": 5.000000000000,
+			"FechaCreacion": "0000-00-00 00:00:00.000000",
+			"Aud_Creado": "0000-00-00 00:00:00.000000",
+			"Aud_Actualizado": "0000-00-00 00:00:00.000000",
+			"Aud_Borrado": 1
+		  },
+		  {
+			"IdProducto": 2,
+			"Marca": "Favorit",
+			"categoria":"aceites",
+			"dispo": "Bajo demanda",
+			"img": "img/team/02.jpg",
+			"name": "Aceites de motor para camiones",
+			"Descripcion": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus",
+			"PrecioInicial": 5.000000000000,
+			"FechaCreacion": "0000-00-00 00:00:00.000000",
+			"Aud_Creado": "0000-00-00 00:00:00.000000",
+			"Aud_Actualizado": "0000-00-00 00:00:00.000000",
+			"Aud_Borrado": 1
+		  },
+		  {
+			"IdProducto": 3,
+			"Marca": "Favorit",
+			"categoria":"grasas",
+			"dispo": "Disponible",
+			"img": "img/team/03.jpg",
+			"name": "Grasas",
+			"Descripcion": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus",
+			"PrecioInicial": 5.000000000000,
+			"FechaCreacion": "0000-00-00 00:00:00.000000",
+			"Aud_Creado": "0000-00-00 00:00:00.000000",
+			"Aud_Actualizado": "0000-00-00 00:00:00.000000",
+			"Aud_Borrado": 1
+		  },
+		  {
+			"IdProducto": 4,
+			"Marca": "Favorit",
+			"categoria":"aceites",
+			"dispo": "Disponible",
+			"img": "img/team/04.jpg",
+			"name": "Aceites de motor según norma gost",
+			"Descripcion": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus",
+			"PrecioInicial": 5.000000000000,
+			"FechaCreacion": "0000-00-00 00:00:00.000000",
+			"Aud_Creado": "0000-00-00 00:00:00.000000",
+			"Aud_Actualizado": "0000-00-00 00:00:00.000000",
+			"Aud_Borrado": 1
+		  },
+		  {
+			"IdProducto": 5,
+			"Marca": "Favorit",
+			"categoria":"aceites",
+			"dispo": "Bajo demanda",
+			"img": "img/team/05.jpg",
+			"name": "Aceites industriales",
+			"Descripcion": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus",
+			"PrecioInicial": 5.000000000000,
+			"FechaCreacion": "0000-00-00 00:00:00.000000",
+			"Aud_Creado": "0000-00-00 00:00:00.000000",
+			"Aud_Actualizado": "0000-00-00 00:00:00.000000",
+			"Aud_Borrado": 1
+		  },
+		  {
+			"IdProducto": 6,
+			"Marca": "Favorit",
+			"categoria":"contenedores",
+			"dispo": "Bajo demanda",
+			"img": "img/team/06.jpg",
+			"name": "Producción de contenedores",
+			"Descripcion": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus",
+			"PrecioInicial": 5.000000000000,
+			"FechaCreacion": "0000-00-00 00:00:00.000000",
+			"Aud_Creado": "0000-00-00 00:00:00.000000",
+			"Aud_Actualizado": "0000-00-00 00:00:00.000000",
+			"Aud_Borrado": 1
+		  },
+		  {
+			"IdProducto": 7,
+			"Marca": "Favorit",
+			"categoria":"aceites",
+			"dispo": "Disponible",
+			"img": "img/team/07.jpg",
+			"name": "Aceites para motos, etc.",
+			"Descripcion": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus",
+			"PrecioInicial": 5.000000000000,
+			"FechaCreacion": "0000-00-00 00:00:00.000000",
+			"Aud_Creado": "0000-00-00 00:00:00.000000",
+			"Aud_Actualizado": "0000-00-00 00:00:00.000000",
+			"Aud_Borrado": 1
+		  },
+		  {
+			"IdProducto": 8,
+			"Marca": "Favorit",
+			"categoria":"aceites",
+			"dispo": "Disponible",
+			"img": "img/team/08.jpg",
+			"name": "Aceite de cadena",
+			"Descripcion": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus",
+			"PrecioInicial": 5.000000000000,
+			"FechaCreacion": "0000-00-00 00:00:00.000000",
+			"Aud_Creado": "0000-00-00 00:00:00.000000",
+			"Aud_Actualizado": "0000-00-00 00:00:00.000000",
+			"Aud_Borrado": 1
+		  }
+	]
+}
