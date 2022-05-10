@@ -31,13 +31,14 @@ export const Contact = (props) => {
                 <tr key={`${d.Contacto}-${i}`}>
                   <td>{d.Contacto}</td>
                   <td>{d.phone}</td>
-                  <td>{d.RIF}</td>
+                  <td>{d.direccion}</td>
                   <td>{d.email}</td>
-                  <td>{d.Latitud}</td>
+                  <td>{d.zona}</td>
                   <td >
-                    <img src={face} alt="facebook" width="25px"/>
-                    <img src={insta} alt="facebook" width="25px"/>
-                    <img src={twit} alt="facebook" width="25px"/>                 
+
+                    <a href={d.FbUrl}><img src={face} alt="facebook" width="25px"/></a>
+                    <a href={d.IgUrl}><img src={insta} alt="facebook" width="25px"/></a>
+                    <a href={d.TtUrl}><img src={twit} alt="facebook" width="25px"/></a>                 
                   </td>
                 </tr>
                 

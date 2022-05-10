@@ -15,9 +15,10 @@ import { Footer } from "./components/footer";
 import  { Blog }  from "./components/blog";
 import  Construc  from "./components/construc";
 import JsonData from "./data/data.json";
-import JsonDat from "./data/distribuidores.json";
-import JsonCategori from "./data/categorias.json";
+import JsonDis from "./data/distribuidores.json";
 import JsonProduct from "./data/productos.json";
+import JsonCategoria from "./data/categorias.json";
+import JsonSubcate from "./data/subcategorias.json";
 import SmoothScroll from "smooth-scroll";
 import { Navconstruc } from "./components/navconstruc";
 import Slider from './components/slider/Slider';
@@ -37,11 +38,8 @@ const Construction = () => {
   return (
     
     <div>
-        <Navconstruc /> 
-      
+      <Navconstruc /> 
       <Construc />
-      
-     
     </div>
   );
 };
@@ -63,7 +61,6 @@ const Index = () => {
       <Services data={landingPageData.Services} />
       {/* <News data={landingPageData.News} /> */}
       {/* <Blog data={landingPageData.Blog}/> */}
-      
       <Footer data={landingPageData.Footer} />
     </div>
   );
@@ -117,6 +114,14 @@ const Catalogo = () => {
   useEffect(() => {
     setLandingPageData( JsonProduct);
   }, []);
+  const [categorias, setCategorias] = useState({});
+  useEffect(() => {
+    setCategorias( JsonCategoria);
+  }, []);
+  const [subcategorias, setSubcategorias] = useState({});
+  useEffect(() => {
+    setSubcategorias( JsonSubcate);
+  }, []);
 
   return (
     <div>
@@ -127,14 +132,14 @@ const Catalogo = () => {
       {/* <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery}/> */}
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
-      <Team productos={landingPageData.rows} />
+      <Team categorias={categorias.rows} subcategorias={subcategorias.rows} productos={landingPageData.rows}  />
       <Footer data={landingPageData.Footer} />
     </div>
   );
 };
 
 
-const Noticia = () => {
+const Marca = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
@@ -168,9 +173,9 @@ const Galeria = () => {
       {/* <Features data={landingPageData.Features} /> */}
       {/* <Noticias data={landingPageData.Noticias} /> */}
       {/* {/* <Services data={landingPageData.Services} /> */}
-      <Gallery data={landingPageData.Gallery}/> 
       {/* <Testimonials data={landingPageData.Testimonials} />
       <Team data={landingPageData.Team} /> */}
+      <Gallery data={landingPageData.Gallery}/> 
      <Footer data={landingPageData.Footer} />
     </div>
   );
@@ -179,7 +184,7 @@ const Galeria = () => {
 const Contactanos = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
-    setLandingPageData(JsonDat);
+    setLandingPageData(JsonDis);
   }, []);
 
   return (
@@ -190,10 +195,9 @@ const Contactanos = () => {
       {/* <About data={landingPageData.About} /> */}
       {/* <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery}/> */}
-      <Contact distribuidores={landingPageData.Contact} />
       
       {/* <Team data={landingPageData.Team} /> */}
-     
+      <Contact distribuidores={landingPageData.Contact} />
      <Footer data={landingPageData.Footer} />
     </div>
   );
@@ -211,7 +215,7 @@ function App() {
         <Route path="/about" component={Abouts} />
         <Route path="/catalogo" component={Catalogo} />
         <Route path="/galeria" component={Galeria}/>
-        <Route path="/noticias" component={Noticia} />
+        <Route path="/sobre-la-marca" component={Marca} />
         <Route path="/contactanos" component={Contactanos} />
       
     </Router>

@@ -22,18 +22,18 @@ export const Services = (props) => {
             
               ? props.data.map((d, i) => (
                 
-                  <div key={`${d.name}-${i}`} className='col-md-3 col-sm-6 team hover visible'>
+                  <div key={`${d.IdProducto}-${i}`} className='col-md-3 col-sm-6 team hover visible'>
                     
                     <div className='thumbnail'>
-                      <div className={d.dispo === 'Disponible' ? 'disponible': 'demanda' }>
-                      <span >{d.dispo}</span>
+                      <div className={d.Disponibilidad === '1' ? 'disponible': 'demanda' }>
+                      
                       </div>
                       {' '}
-                      <img src={d.img} alt='...' className= 'team-img' />
+                      <img src={d.Imagen} alt='...' className= 'team-img' />
                       <div className='caption'>
-                        <h4>{d.name}</h4>
-                        <p className="price">PRECIO: {d.price}$</p>
-                        <p>{d.job}</p>
+                        <h4>{d.Marca}</h4>
+                       
+                        <p>{d.Descripcion}</p>
                         <a href="/catalogo" className='btn btn-compartir '>MAS INFORMACION</a>
                       </div>
                     </div>

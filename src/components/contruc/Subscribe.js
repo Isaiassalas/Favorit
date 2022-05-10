@@ -39,6 +39,7 @@ const Subscribe = ({
   
   const {Nombre,Correo} = state;
   const [data, setData]=useState([]);
+  
   const handleSubmit=async(e)=>{
     e.preventDefault();
     const baseUrl="http://127.0.0.1:80/Favorit/api/";

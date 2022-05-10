@@ -1,30 +1,22 @@
 {
-	"table": "categorias",
+	"table": "Categorias",
 	"rows":
 	[
 		{
 			"IdCategoria": 1,
-			"Nombre": "aceites",
-			"Descripcion": "aceites",
-			"Aud_Creado": "2022-04-25 12:25:44.000000",
-			"Aud_Actualizado": "2022-04-25 12:25:45.000000",
-			"Aud_Borrado": 0
+			"Nombre": "LUBRICANTES",
+			"Descripcion": "LUBRICANTES",
+			"Aud_creado": "26/04/2022",
+			"aud_actualizado": "26/04/2022",
+			"aud_borrado": 0
 		},
 		{
 			"IdCategoria": 2,
-			"Nombre": "grasas",
-			"Descripcion": "grasas",
-			"Aud_Creado": "2022-04-25 12:26:18.000000",
-			"Aud_Actualizado": "2022-04-25 12:26:19.000000",
-			"Aud_Borrado": 0
-		},
-		{
-			"IdCategoria": 3,
-			"Nombre": "contenedores",
-			"Descripcion": "contenedores",
-			"Aud_Creado": "2022-04-25 12:26:29.309911",
-			"Aud_Actualizado": "2022-04-25 12:26:31.961458",
-			"Aud_Borrado": 0
+			"Nombre": "GRASAS",
+			"Descripcion": "GRASA",
+			"Aud_creado": "26/04/2022",
+			"aud_actualizado": "26/04/2022",
+			"aud_borrado": 0
 		}
 	]
 }

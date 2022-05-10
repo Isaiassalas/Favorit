@@ -1,94 +1,94 @@
 {
-	"table": "subcategorias",
+	"table": "Subcategorias",
 	"rows":
 	[
 		{
 			"id": 1,
 			"categoria_id": 1,
-			"name": "VEHICULO",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:27:43",
-			"updated_at": "2022-04-25 12:27:35"
+			"name": "MINERAL MONOGRADO SAE 50 CF",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		},
 		{
 			"id": 2,
-			"categoria_id": 1,
-			"name": "CICLISTA",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:27:58",
-			"updated_at": "2022-04-25 12:27:58"
+			"categoria_id": 2,
+			"name": "MULTIGRADO DUAL 20W50 CF-4/SL",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		},
 		{
 			"id": 3,
-			"categoria_id": 2,
-			"name": "MOTO",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:29:13",
-			"updated_at": "2022-04-25 12:28:02"
+			"categoria_id": 3,
+			"name": "MULTIGRADO DUAL 15W40 ",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		},
 		{
 			"id": 4,
-			"categoria_id": 3,
-			"name": "VEHICULO",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:30:41",
-			"updated_at": "2022-04-25 12:30:31"
+			"categoria_id": 4,
+			"name": "SINTETICOS ",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		},
 		{
 			"id": 5,
-			"categoria_id": 3,
-			"name": "CARGA PESADA",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:31:03",
-			"updated_at": "2022-04-25 12:30:52"
+			"categoria_id": 5,
+			"name": "HIDRAULICO ISO 68",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		},
 		{
 			"id": 6,
-			"categoria_id": 3,
-			"name": "MOTO",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:31:26",
-			"updated_at": "2022-04-25 12:31:17"
+			"categoria_id": 6,
+			"name": "MANUALES TRANSMISION FLUID",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		},
 		{
 			"id": 7,
-			"categoria_id": 3,
-			"name": "CAMIONETA",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:31:36",
-			"updated_at": "2022-04-25 12:31:36"
+			"categoria_id": 7,
+			"name": "ATF DEXRON III",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		},
 		{
 			"id": 8,
-			"categoria_id": 3,
-			"name": "BICICLETA",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:32:09",
-			"updated_at": "2022-04-25 12:31:40"
+			"categoria_id": 8,
+			"name": "MANUALES TRANSMISION FLUID ",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		},
 		{
 			"id": 9,
-			"categoria_id": 5,
-			"name": "MOTO",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:33:34",
-			"updated_at": "2022-04-25 12:32:29"
+			"categoria_id": 9,
+			"name": "20W50 MOTO 4T",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		},
 		{
 			"id": 10,
-			"categoria_id": 6,
-			"name": "MOTO",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:33:55",
-			"updated_at": "2022-04-25 12:33:55"
+			"categoria_id": 10,
+			"name": "ADITIVOS",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		},
 		{
 			"id": 11,
-			"categoria_id": 6,
-			"name": "BICICLETA",
-			"estatus": 0,
-			"created_at": "2022-04-25 12:34:07",
-			"updated_at": "2022-04-25 12:34:07"
+			"categoria_id": 11,
+			"name": "GRASA",
+			"estatus": "0",
+			"created_At": "26/04/2022",
+			"updated_at": "26/04/2022"
 		}
 	]
 }

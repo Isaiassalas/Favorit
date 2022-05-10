@@ -5,8 +5,6 @@ import Links from "./contruc/Links";
 import Countdown from "./contruc/Countdown";
 import Subscribe from "./contruc/Subscribe";
 import logo from "../img/gear-with-holes.svg";
-// import xmark from "../images/x-mark.svg";
-// import check from "../images/check-mark.svg";
 import facebook from "../img/FB.png";
 import instagram from "../img/IG.png";
 import "../styles/ComingSoon.css";
@@ -18,7 +16,7 @@ import "../styles/Title.css";
 class Construc extends Component {
   state = {
     countdown: {
-      countdownDate: "2022-04-30 00:00:00"
+      countdownDate: "2022-05-15 00:00:00"
     },
     logo: {
       alt: "Spinning Gear",

@@ -96,37 +96,73 @@
   ],
   "Services": [
     {
-      "categoria":"aceites",
-      "price":"70.99",
-      "dispo": "Disponible",
-      "img": "img/team/08.jpg",
-      "name": "Aceite de cadena",
-      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
-    },
-    {
-      "categoria":"aceites",
-      "price":"30.88",
-      "dispo": "Disponible",
-      "img": "img/team/01.jpg",
-      "name": "Aceite de motor de turismos",
-      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
-    },
-    {
-      "categoria":"aceites",
-      "price":"50",
-      "dispo": "Bajo demanda",
-      "img": "img/team/02.jpg",
-      "name": "Aceites de motor para camiones",
-      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
-    },
-    {
-      "categoria":"aceites",
-      "price":"50.55",
-      "dispo": "Disponible",
-      "img": "img/team/04.jpg",
-      "name": "Aceites de motor según norma gost",
-      "job": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus"
-    }
+			"IdProducto": "1",
+			"Marca": "FAVORIT ",
+			"Nombre": "Favorit SAE 50 API CF MOTOR OIL (CAJA 20X1L)",
+			"Descripcion": "Favorit SAE 50 API CF MOTOR OIL (CAJA 20X1L)",
+			"CodigoProducto": "MHD5001",
+			"Codigodebarras": "null",
+			"IdCategoria": "1",
+			"IdSubCategoria": "1",
+			"Imagen": "img/team/04.jpg",
+			"Disponibilidad": "1",
+			"Precio": "null",
+			"FEchaCreacion": "26/04/2022",
+			"aud_creado": "26/04/2022",
+			"aud_actualizado": "26/04/2022",
+			"aud_borrado": "0"
+		},
+		{
+			"IdProducto": "2",
+			"Marca": "FAVORIT ",
+			"Nombre": "Favorit SAE 50 API CF MOTOR OIL (BIDON 20L)",
+			"Descripcion": "Favorit SAE 50 API CF MOTOR OIL (BIDON 20L)",
+			"CodigoProducto": "MHD5020",
+			"Codigodebarras": "null",
+			"IdCategoria": "1",
+			"IdSubCategoria": "1",
+			"Imagen": "img/team/04.jpg",
+			"Disponibilidad": "1",
+			"Precio": "null",
+			"FEchaCreacion": "26/04/2022",
+			"aud_creado": "26/04/2022",
+			"aud_actualizado": "26/04/2022",
+			"aud_borrado": "0"
+		},
+		{
+			"IdProducto": "3",
+			"Marca": "FAVORIT ",
+			"Nombre": "Favorit SAE 50 API CF MOTOR OIL (BARRICA 60L).",
+			"Descripcion": "Favorit SAE 50 API CF MOTOR OIL (BARRICA 60L).",
+			"CodigoProducto": "MHD5060",
+			"Codigodebarras": "null",
+			"IdCategoria": "1",
+			"IdSubCategoria": "1",
+			"Imagen": "img/team/04.jpg",
+			"Disponibilidad": "1",
+			"Precio": "null",
+			"FEchaCreacion": "26/04/2022",
+			"aud_creado": "26/04/2022",
+			"aud_actualizado": "26/04/2022",
+			"aud_borrado": "0"
+		},
+		{
+			"IdProducto": "4",
+			"Marca": "FAVORIT ",
+			"Nombre": "Favorit SAE 50 API CF MOTOR OIL (TAMBOR 208L).",
+			"Descripcion": "Favorit SAE 50 API CF MOTOR OIL (TAMBOR 208L).",
+			"CodigoProducto": "MHD50TB",
+			"Codigodebarras": "null",
+			"IdCategoria": "1",
+			"IdSubCategoria": "1",
+			"Imagen": "img/team/04.jpg",
+			"Disponibilidad": "1",
+			"Precio": "null",
+			"FEchaCreacion": "26/04/2022",
+			"aud_creado": "26/04/2022",
+			"aud_actualizado": "26/04/2022",
+			"aud_borrado": "0"
+		}
 
   ],
   "Contact": [
