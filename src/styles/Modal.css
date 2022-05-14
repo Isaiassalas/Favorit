@@ -1,36 +1,48 @@
 .modal {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.75);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    transition-delay: 1s;
-  }
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition-delay: 1s;
+}
+
+.modal-container {
+  position: relative;
+  padding: 1rem;
+  margin-top: 70px;
+  min-width: 370px;
+  max-width: 490px;
+  min-height: 380px;
+  max-height: 600px;
+  border-radius: 4%;
+  overflow-y: auto;
+  background-color: rgb(214, 214, 214);
+}
+
+.modal-close {
+  position: absolute;
   
-  .modal-container {
-    position: relative;
-    padding: 1rem;
-    min-width: 320px;
-    max-width: 480px;
-    min-height: 120px;
-    max-height: 200px;
-    overflow-y: auto;
-    background-color: rgb(214, 214, 214);
-  }
+  background: #990000;
+  color: #fff;
   
-  .modal-close {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    background: #990000;
-    color: #fff;
-  }
+}
+
+.modal.is-open {
+  display: flex;
+}
+.p-modal {
+  font-size: 19px;
+  text-align: center;
+}
+.img-modal{
+  width: 100px;
+  margin:0px auto;
+  display:block;
   
-  .modal.is-open {
-    display: flex;
-  }
+}

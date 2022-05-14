@@ -9,7 +9,7 @@ import { Services } from "./components/services";
 import { Gallery } from "./components/gallery";
 import { Contact } from "./components/contact";
 import { Team } from "./components/Team";
-import { Noticias } from "./components/noticias";
+import { Marcas } from "./components/marca";
 // import { News } from "./components/lastnews";
 import { Footer } from "./components/footer";
 import  { Blog }  from "./components/blog";
@@ -23,6 +23,8 @@ import SmoothScroll from "smooth-scroll";
 import { Navconstruc } from "./components/navconstruc";
 import Slider from './components/slider/Slider';
 import slides from './data/slides';
+import categoriaMarca from './data/categoria-marca';
+import SliderMarca from './components/slider/SliderMarca';
 
 import "./App.css";
 
@@ -49,6 +51,11 @@ const Index = () => {
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
+  const [productos, setProductos] = useState({});
+  useEffect(() => {
+    setProductos( JsonProduct);
+  }, []);
+  
 
   return (
     
@@ -58,7 +65,7 @@ const Index = () => {
       <Features data={landingPageData.Features} />
       {/* <AboutHome data={landingPageData.Features} /> */}
       <Slider slides={slides} />
-      <Services data={landingPageData.Services} />
+      <Services data={landingPageData.Services} productos={productos.rows} />
       {/* <News data={landingPageData.News} /> */}
       {/* <Blog data={landingPageData.Blog}/> */}
       <Footer data={landingPageData.Footer} />
@@ -150,7 +157,8 @@ const Marca = () => {
       {/* <Navigation /> */}
       {/* <Header data={landingPageData.Header} /> */}
       {/* <Features data={landingPageData.Features} /> */}
-      <Noticias data={landingPageData.Noticias} />
+      <Marcas data={landingPageData.Marca} />
+      <SliderMarca slides={categoriaMarca} />
       {/* <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery}/> */}
       {/* <Testimonials data={landingPageData.Testimonials} />

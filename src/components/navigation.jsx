@@ -51,14 +51,14 @@ export const Navigation = () => {
               <Link to="/about" className="page-scroll">Sobre la empresa</Link>
               </li>
               <li>
+              <Link to="/sobre-la-marca" className="page-scroll">Sobre la marca</Link>
+              </li>
+              <li>
               <Link to="/catalogo" className="page-scroll">Catalogo</Link>
               </li>
               {/* <li>
               <Link to="/galeria" className="page-scroll">Galeria</Link>
               </li> */}
-              <li>
-              <Link to="/sobre-la-marca" className="page-scroll">Sobre la marca</Link>
-              </li>
               
               <li>
               <Link to="/contactanos" className="page-scroll">Distribuidores</Link>

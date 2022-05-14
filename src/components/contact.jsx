@@ -37,8 +37,8 @@ export const Contact = (props) => {
                   <td >
 
                     <a href={d.FbUrl}><img src={face} alt="facebook" width="25px"/></a>
-                    <a href={d.IgUrl}><img src={insta} alt="facebook" width="25px"/></a>
-                    <a href={d.TtUrl}><img src={twit} alt="facebook" width="25px"/></a>                 
+                    <a href={d.IgUrl}><img src={insta} alt="instagram" width="25px"/></a>
+                    <a href={d.TtUrl}><img src={twit} alt="twitter" width="25px"/></a>                 
                   </td>
                 </tr>
                 

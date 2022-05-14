@@ -1,15 +1,13 @@
 import "../../styles/Modal.css";
 
-const Modal = ({ children, isOpen, toggle }) => {
+const Modal = ({ children, isOpen, toggle, informacion }) => {
   const handleModalContainerClick = (e) => e.stopPropagation();
 
   return (
-    <article className={`modal ${isOpen && "is-open"}`} onClick={toggle}>
+    <article id={informacion} className={`modal ${isOpen && "is-open"}`} onClick={toggle}>
       <div className="modal-container" onClick={handleModalContainerClick}>
-        <button className="modal-close" onClick={toggle}>
-          X
-        </button>
         {children}
+        
       </div>
     </article>
   );

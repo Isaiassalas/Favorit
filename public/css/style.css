@@ -287,7 +287,7 @@ header .intro-text {
   background-image: linear-gradient(to right, #710101 0%, #990000 100%);
   padding: 10px 20px;
   letter-spacing: 1px;
-  margin: 7px 0;
+  margin: 7px 5px;
   font-size: 12px;
   font-weight: 500;
   border-radius: 25px;
@@ -437,8 +437,8 @@ header .intro-text {
 #about img {
   align-content: center;
   width: 560px;
-  margin: 10px auto !important;
-  background: #fff;
+  margin: 20px auto !important;
+  
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
 }
@@ -555,52 +555,80 @@ header .intro-text {
 }
 
 
-/* -------------------------------------------noticias section------------------------------------------- */
-#noticias {
-  
-  margin: 120px 70px 50px 70px ;
-  padding: 70px 0;
-  background: linear-gradient(to right, #DFDFDF 0%, #D3D3D3 100%);
-  
+/* -------------------------------------------marca section------------------------------------------- */
+
+.title-marca h2{
+  text-transform: uppercase;
+  margin: 10px 10px 0 20px;
+  font-weight: 800;
+  font-size: 30px;
+  color: #333;
 }
-#noticias .service-desc {
-  margin: 10px 10px 20px;
-}
-#noticias h2 {
-  color: #000;
-}
-#noticias .section-title h2::after {
+.title-marca h2::after {
   position: absolute;
   content: "";
-  background:  linear-gradient(to right, #710101 0%, #990000 100%);
+  background: linear-gradient(to right, #710101 0%, #990000 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
   margin-left: -30px;
   left: 50%;
 }
-#noticias i.fa {
-  font-size: 42px;
-  width: 120px;
-  height: 120px;
-  padding: 40px 0;
-  background: linear-gradient(to right, #990000 0%, #710101 100%);
-  border-radius: 50%;
+.title-modelo h2{
+  font-size: 30px;
   color: #fff;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  padding: 15px 0px;
 }
-#noticias h4 {
-  font-weight: 550;
+.title-modelo h2::after {
+  display: none;
+}
+
+.b-rojo{
+  background-color: #710101;
+  width: 100%;
+}
+
+#about .img-content{
+  text-align: center;
+
+}
+
+#about .img-marca{
+  width: 150px;
+  margin: 0px 40px !important;
+  height: auto;
   padding: 10px ;
- 
+  
 }
-#noticias p {
-  color: #000;
-  padding: 10px;
+#about .img-cadena{
+  width: 160px;
+  margin: 15px !important;
+  height: auto;
+  padding: 5px 0px ;
+  
+  
 }
-#noticias .service-desc {
-  margin-bottom: 40px;
+#about .col-md-2{
+  width: 16%;
+  margin: 0px;
+  margin-left: 8px;
+  
 }
+#about .col-md-2 p{
+ margin-right: 50px;
+}
+
+.content-tecno{
+  margin-bottom: 30px;
+}
+#about .text-funcional h3{
+  color: #fff;
+}
+#about .text-funcional{
+  margin-top: 120px;
+}
+
+
 /* ------------------------------------Portfolio Section------------------------------------ */
 #portfolio {
   margin: 60px;
@@ -645,7 +673,7 @@ header .intro-text {
 }
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;
-  -webkit-backface-visibility: hidden;
+  
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
@@ -660,7 +688,7 @@ header .intro-text {
 }
 .hover-bg:hover .hover-text > p {
   opacity: 1;
-  -webkit-backface-visibility: hidden;
+  
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
@@ -853,6 +881,7 @@ header .intro-text {
   cursor: pointer;
   font-weight: 600;
   width: 100%;
+  
    
 }
 
@@ -864,6 +893,7 @@ header .intro-text {
   margin-left: 20px;
   background-color: rgb(216, 216, 216);
   min-width: 120px;
+  
 }
 
 .dropdown-active a {
@@ -884,15 +914,21 @@ header .intro-text {
   display: block;
   text-align: left;
   
+  
 }
 .dropdown-content a:hover, .dropdown-active a:hover {background-color: #f1f1f1}
 
 
 .dropdown-active {
   display: block;
-  margin-left: 20px;
+  position: absolute;
+  margin-left: 0px;
   background-color: rgb(216, 216, 216);
   min-width: 120px;
+  width: 100%;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 00px, rgba(0, 0, 0, 0.23) 4px 6px 6px;
+  border-radius: 10px;
   
 }
 
@@ -1065,6 +1101,17 @@ label {
     display: block;
     overflow-x: auto;
   }
+  #about .col-md-2{
+    width: 100%;
+  }
+  #team .col-md-2{
+    width: 60%;
+    margin: 0px auto;
+  }
+  #about .text-funcional h3{
+    font-size: 16px;
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -1074,6 +1121,14 @@ label {
   #about .text-right{
     text-align: center;
   }
+  #about .text-funcional {
+    margin-top: 20px;
+    text-align: center;
+  }
+  #about .text-funcional h3{
+    font-size: 22px;
+  }
+  
  
 }
 
@@ -1108,11 +1163,7 @@ h2{
   #menu img {
     width: 32%;
   }
-  #noticias{
-    width: 95%;
-    margin:120px 10px 40px 10px  ;
-   
-  }
+ 
   .portfolio-item{
     padding: 10px;
     margin: 0px;
@@ -1144,11 +1195,7 @@ header .intro-text{
 }
 
 @media (max-width: 400px) {
-  #noticias{
-    width: 93%;
-    margin:120px 10px 40px 10px  ;
-   
-  }
+ 
   #menu img {
     width: 45%;
   }

@@ -94,6 +94,34 @@
       "smallImage": "img/portfolio/09-small.jpg"
     }
   ],
+  "Marca": [
+    {
+      "title": "Recibir materia prima",
+      "Image": "img/marca/raw-materials.png"
+    },
+    {
+      "title": "Almacenar materia prima",
+      "Image": "img/marca/raw-materials1.png"
+    },
+    {
+      "title": "Producción",
+      "Image": "img/marca/factory.png"
+    },
+    {
+      "title": "Análisis de laboratorio",
+      "Image": "img/marca/laboratory.png"
+    },
+    {
+      "title": "Llenado y almacen producto terminado",
+      "Image": "img/marca/boxes.png"
+    
+    },  
+    {
+      "title": "Logística",
+      "Image": "img/marca/supply-chain-management.png"
+      
+    }
+  ],
   "Services": [
     {
 			"IdProducto": "1",

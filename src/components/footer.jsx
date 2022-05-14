@@ -129,7 +129,7 @@ export const Footer = (props) => {
               <div className='social'>
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : '/'}>
+                    <a href={props.data ? props.data.facebook : 'https://www.facebook.com/favoritvenezuela/'}>
                       <i className='fa fa-facebook'></i>
                     </a>
                   </li>
