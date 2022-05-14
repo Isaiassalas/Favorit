@@ -13,14 +13,12 @@ import { Marcas } from "./components/marca";
 // import { News } from "./components/lastnews";
 import { Footer } from "./components/footer";
 import  { Blog }  from "./components/blog";
-import  Construc  from "./components/construc";
 import JsonData from "./data/data.json";
 import JsonDis from "./data/distribuidores.json";
 import JsonProduct from "./data/productos.json";
 import JsonCategoria from "./data/categorias.json";
 import JsonSubcate from "./data/subcategorias.json";
 import SmoothScroll from "smooth-scroll";
-import { Navconstruc } from "./components/navconstruc";
 import Slider from './components/slider/Slider';
 import slides from './data/slides';
 import categoriaMarca from './data/categoria-marca';
@@ -33,18 +31,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
   speedAsDuration: true,
 });
 
-const Construction = () => {
- 
-  
 
-  return (
-    
-    <div>
-      <Navconstruc /> 
-      <Construc />
-    </div>
-  );
-};
 
 const Index = () => {
   const [landingPageData, setLandingPageData] = useState({});
@@ -217,9 +204,9 @@ function App() {
 
         <Navigation />
 
-        <Route path="/" exact component={Construction} />
+        <Route path="/" exact component={Index} />
         <Route path="/blog" component={Bloger} />
-        <Route path="/inicio" component={Index} />
+        
         <Route path="/about" component={Abouts} />
         <Route path="/catalogo" component={Catalogo} />
         <Route path="/galeria" component={Galeria}/>

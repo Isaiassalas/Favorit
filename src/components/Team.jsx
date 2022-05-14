@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
 import flecha from "../img/catalogo/abajo.png";
-import Modal from "./contruc/Modal";
+import Modal from "./modal/Modal";
 
 export const Team = (props) => {
   const [categoria, setCategoria] = useState("todos");

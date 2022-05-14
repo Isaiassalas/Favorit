@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
-import Modal from "./contruc/Modal";
+import Modal from "./modal/Modal";
 
 export const Services = (props) => {
   const [modalInsertar, setModalInsertar] = useState(false);

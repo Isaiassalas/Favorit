@@ -44,7 +44,7 @@ export const Navigation = () => {
               
               </li> */}
               <li>
-              <Link to="/inicio" className="page-scroll">Inicio</Link>
+              <Link to="/" className="page-scroll">Inicio</Link>
               
               </li>
               <li>
