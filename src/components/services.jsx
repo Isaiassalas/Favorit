@@ -76,7 +76,7 @@ export const Services = (props) => {
                 <h4>Descripción:</h4>
                 <p className="p-modal">{p.Descripcion}</p> <br />
                 <h4 >Codigo:{" "}"{p.CodigoProducto}"</h4>
-                <a className="btn btn-compartir">CONTACTAR</a>
+                <a href={`https://wa.me/+584124022069?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20producto%20${p.Nombre}%20Codigo:${p.CodigoProducto}`} className="btn btn-compartir">CONTACTAR</a>
                 <a className="btn btn-compartir" onClick={toggle}>CERRAR</a>
               </Modal>
               )}

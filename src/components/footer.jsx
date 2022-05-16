@@ -152,7 +152,8 @@ export const Footer = (props) => {
       <div id='footer2'>
         <div className='container text-center'>
           <p>
-            &copy; 2021  LLC “Eurasia Lubricants” - production of motor oils and lubricants.{' '}
+              By <a href="https://www.alphaconduit.tech/" target="_blank" rel="noopener noreferrer">Alpha Conduit</a>{' '}
+              {/* &copy; 2021 */}
           </p>
         </div>
       </div>
