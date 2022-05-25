@@ -30,13 +30,13 @@ const Wrapper = styled.div `
     }
     li{
         
-        min-width:35vw;
-        max-width:35vw;
+        min-width:38vw;
+        max-width:38vw;
         padding: 5px 10px;
-        transform: scale(0.86) translate(-26%, -2%);
+        transform: scale(0.86) translate(-28%, -3%);
         opacity:0.3;
         &.activo{
-            transform: scale(1.1) translate(-24%, -4%);
+            transform: scale(1.1) translate(-25%, -5%);
             opacity:1;
         }
         @media (max-width: 760px){
@@ -108,7 +108,7 @@ const Slider = ({slides, slide })=> {
                 </div>
             <Wrapper mobileExpand={mobileExpand} >
                 <div className='slider'>
-                    <Tran {...{SlideIndex}} slideWidth={35}>
+                    <Tran {...{SlideIndex}} slideWidth={38}>
                         <ul>
 
                             
@@ -130,7 +130,7 @@ const Slider = ({slides, slide })=> {
                            
                         </ul>
                     </Tran>
-                    <Controls slideWidth={41} prev={onPrev} next={onNext}/>
+                    <Controls slideWidth={43} prev={onPrev} next={onNext}/>
                 </div>
                 <Mobile {...{mobileExpand, setMobileExpand}} totalSlides={slides.length}/>
             </Wrapper>

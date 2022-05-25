@@ -1,35 +1,35 @@
-import AUTOMOVILESMOTORES from './img/marca/AUTOMOVILESMOTORES.png';
-import DIESELMOTORES from './img/marca/DIESELMOTORES.png';
-import Industriales from './img/marca/Industriales.png';
-import MOTOCICLETAS from './img/marca/MOTOCICLETAS.png';
-import TRANSMISIONES from './img/marca/TRANSMISIONES.png';
+import Graficos_3_1 from './img/marca/Graficos_3_1.png';
+import Graficos_3_2 from './img/marca/Graficos_3_2.png';
+import Graficos_3_3 from './img/marca/Graficos_3_3.png';
+import Graficos_3_4 from './img/marca/Graficos_3_4.png';
+import Graficos_3_5 from './img/marca/Graficos_3_5.png';
 
 
 
 const slides = [
     {
         id: 1,
-        url: AUTOMOVILESMOTORES,
+        url: Graficos_3_1,
         type: "img",
     },
     {
         id: 2,
-        url: DIESELMOTORES,
+        url: Graficos_3_2,
         type: "img",
     },
     {
         id: 3,
-        url: Industriales,
+        url: Graficos_3_3,
         type: "img",
     },
     {
         id: 4,
-        url: MOTOCICLETAS,
+        url: Graficos_3_4,
         type: "img",
     },
     {
         id: 5,
-        url: TRANSMISIONES,
+        url: Graficos_3_5,
         type: "img",
     }
 
