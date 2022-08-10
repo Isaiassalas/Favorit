@@ -1,16 +1,43 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import flecha from "../img/catalogo/abajo.png";
 import Modal from "./modal/Modal";
 
+const url = "http://localhost:8000/api";
 export const Team = (props) => {
-  const [categoria, setCategoria] = useState("todos");
-  const [subcategoria, setSubcategoria] = useState("todos");
+  const [opcioncategorias, setOpcionCategorias] = useState("todos");
+  const [opcionsubcategoria, setOpcionSubcategoria] = useState("todos");
   const [dropdown, setDropdown] = useState(false);
   const [subdropdown, setSubdropdown] = useState(false);
   const [modalInsertar, setModalInsertar] = useState(false);
   const [informacion, setInformacion] = useState();
+  const [products, setProducts] = useState([]);
+  const [categoria, setCategoria] = useState([]);
+  const [subcategoria, setSubcategoria] = useState([]);
+
+  const getAllProducts = async () => {
+    const response = await axios.get(`${url}/products`);
+    setProducts(response.data);
+  };
+  useEffect(() => {
+    getAllProducts();
+  }, []);
+
+  const getAllCategori = async () => {
+    const response = await axios.get(`${url}/categorias`);
+    setCategoria(response.data);
+  };
+  useEffect(() => {
+    getAllCategori();
+  }, []);
+
+  const getAllSubcategori = async () => {
+    const response = await axios.get(`${url}/subcategorias`);
+    setSubcategoria(response.data);
+  };
+  useEffect(() => {
+    getAllSubcategori();
+  }, []);
 
   const abrirCerrarDropdow = () => {
     setDropdown(!dropdown);
@@ -21,15 +48,15 @@ export const Team = (props) => {
   const handlCategorias = function (e) {
     const opcion = e.target.id;
 
-    setCategoria(opcion);
-    setSubcategoria("todos");
+    setOpcionCategorias(opcion);
+    setOpcionSubcategoria("todos");
 
     setDropdown(!dropdown);
   };
   const handlSubcategorias = function (e) {
     const opcionsub = e.target.id;
 
-    setSubcategoria(opcionsub);
+    setOpcionSubcategoria(opcionsub);
 
     setSubdropdown(!subdropdown);
   };
@@ -38,7 +65,7 @@ export const Team = (props) => {
     const info = e.target.id;
 
     setInformacion(info);
-    
+
     setModalInsertar(!modalInsertar);
   };
 
@@ -62,13 +89,13 @@ export const Team = (props) => {
                   <a id="todos" onClick={handlCategorias} href="#">
                     TODOS
                   </a>
-                  {props.categorias
-                    ? props.categorias.map((c, i) => (
+                  {categoria
+                    ? categoria.map((c, i) => (
                         <a
-                          key={i}
+                          key={`${c.Nombre}-${i}`}
                           id={c.IdCategoria}
                           onClick={handlCategorias}
-                          href="#"
+                          href="#top"
                         >
                           {c.Nombre}
                         </a>
@@ -87,13 +114,13 @@ export const Team = (props) => {
                       : "dropdown-content"
                   }
                 >
-                  {props.subcategorias
-                    ? props.subcategorias.map((s, i) => (
+                  {subcategoria
+                    ? subcategoria.map((s, i) => (
                         <a
-                          key={i}
+                          key={`${s.Nombre}-${i}`}
                           id={s.id}
                           onClick={handlSubcategorias}
-                          href="#"
+                          href="#top"
                         >
                           {s.name}
                         </a>
@@ -106,23 +133,26 @@ export const Team = (props) => {
         </div>
 
         <div id="row ">
-          {props.productos
-            ? props.productos.map((p, i) => (
+          {products
+            ? products.map((p, i) => (
                 <div
                   key={`${p.Nombre}-${i}`}
                   className={`col-md-2 col-sm-5 hover ${
-                    categoria === p.IdCategoria || categoria === "todos"
+                    opcioncategorias === p.IdCategoria ||
+                    opcioncategorias === "todos"
                       ? "visible"
                       : "ocultar"
                   } ${
-                    subcategoria === p.IdSubCategoria ? "visible" : "ocultar"
+                    opcionsubcategoria === p.IdSubCategoria
+                      ? "visible"
+                      : "ocultar"
                   } `}
                 >
                   <div
                     id={p.CodigoProducto}
                     className={`thumbnail ${
-                      subcategoria === p.IdSubCategoria ||
-                      subcategoria === "todos"
+                      opcionsubcategoria === p.IdSubCategoria ||
+                      opcionsubcategoria === "todos"
                         ? "visiblesub"
                         : "ocultar"
                     } `}
@@ -154,25 +184,39 @@ export const Team = (props) => {
         </div>
       </div>
 
-      {props.productos
-        ? props.productos.map((p, i) => (
+      {products
+        ? products.map((p, i) => (
             <div>
               {informacion === p.IdProducto && (
-                <Modal key={i}
+                <Modal
+                  key={`${p.Nombre}-${i}`}
                   informacion={informacion}
                   isOpen={modalInsertar}
                   toggle={toggle}
                 >
                   <h5>Producto</h5>
                   <img className="img-modal" src={p.Imagen} alt="producto" />
-                  <p >{p.Nombre}</p>
-                  <h4>Marca: <br /> {p.Marca}</h4> <br />
-                  <h4>Fecha: <br /> {p.FEchaCreacion}</h4> <br />
+                  <p>{p.Nombre}</p>
+                  <h4>
+                    Marca: <br /> {p.Marca}
+                  </h4>{" "}
+                  <br />
+                  <h4>
+                    Fecha: <br /> {p.FEchaCreacion}
+                  </h4>{" "}
+                  <br />
                   <h4>Descripción:</h4>
                   <p className="p-modal">{p.Descripcion}</p> <br />
-                  <h4 >Codigo:{" "}"{p.CodigoProducto}"</h4>
-                  <a href={`https://wa.me/+584124022069?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20producto%20${p.Nombre}%20Codigo:${p.CodigoProducto}`} className="btn btn-compartir ">CONTACTAR</a>
-                  <a className="btn btn-compartir" onClick={toggle}>CERRAR</a>
+                  <h4>Codigo: "{p.CodigoProducto}"</h4>
+                  <a
+                    href={`https://wa.me/+584124022069?text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20producto%20${p.Nombre}%20Codigo:${p.CodigoProducto}`}
+                    className="btn btn-compartir "
+                  >
+                    CONTACTAR
+                  </a>
+                  <a className="btn btn-compartir" onClick={toggle}>
+                    CERRAR
+                  </a>
                 </Modal>
               )}
             </div>

@@ -48,7 +48,7 @@ export const Navigation = () => {
               
               </li>
               <li>
-              <Link to="/about" className="page-scroll">Sobre la empresa</Link>
+              <Link to="/sobre-la-empresa" className="page-scroll">Sobre la empresa</Link>
               </li>
               <li>
               <Link to="/sobre-la-marca" className="page-scroll">Sobre la marca</Link>
@@ -61,7 +61,7 @@ export const Navigation = () => {
               </li> */}
               
               <li>
-              <Link to="/contactanos" className="page-scroll">Distribuidores</Link>
+              <Link to="/distribuidores" className="page-scroll">Distribuidores</Link>
               </li>
             </ul>
           

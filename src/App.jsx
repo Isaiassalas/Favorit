@@ -10,19 +10,17 @@ import { Gallery } from "./components/gallery";
 import { Contact } from "./components/contact";
 import { Team } from "./components/Team";
 import { Marcas } from "./components/marca";
-// import { News } from "./components/lastnews";
 import { Footer } from "./components/footer";
-import  { Blog }  from "./components/blog";
+import { Blog } from "./components/blog";
+import { Agregarproduc } from "./components/Agregarproduc";
 import JsonData from "./data/data.json";
 import JsonDis from "./data/distribuidores.json";
 import JsonProduct from "./data/productos.json";
-import JsonCategoria from "./data/categorias.json";
-import JsonSubcate from "./data/subcategorias.json";
 import SmoothScroll from "smooth-scroll";
-import Slider from './components/slider/Slider';
-import slides from './data/slides';
-import categoriaMarca from './data/categoria-marca';
-import SliderMarca from './components/slider/SliderMarca';
+import Slider from "./components/slider/Slider";
+import slides from "./data/slides";
+import categoriaMarca from "./data/categoria-marca";
+import SliderMarca from "./components/slider/SliderMarca";
 
 import "./App.css";
 
@@ -31,8 +29,6 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
   speedAsDuration: true,
 });
 
-
-
 const Index = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
@@ -40,21 +36,16 @@ const Index = () => {
   }, []);
   const [productos, setProductos] = useState({});
   useEffect(() => {
-    setProductos( JsonProduct);
+    setProductos(JsonProduct);
   }, []);
-  
 
   return (
-    
     <div>
-      
+       {/* <Navigation />*/}
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
-      {/* <AboutHome data={landingPageData.Features} /> */}
       <Slider slides={slides} />
       <Services data={landingPageData.Services} productos={productos.rows} />
-      {/* <News data={landingPageData.News} /> */}
-      {/* <Blog data={landingPageData.Blog}/> */}
       <Footer data={landingPageData.Footer} />
     </div>
   );
@@ -67,16 +58,9 @@ const Bloger = () => {
   }, []);
 
   return (
-    
     <div>
-      {/* <Navigation />
-      <Header data={landingPageData.Header} /> */}
+      {/* <Navigation />*/}
       <Blog data={landingPageData.Blog} />
-      {/* <AboutHome data={landingPageData.Features} />
-      <Services data={landingPageData.Services} /> */}
-      {/* <Gallery data={landingPageData.Gallery}/> */}
-      {/* <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} /> */}
       <Footer data={landingPageData.Footer} />
     </div>
   );
@@ -91,47 +75,12 @@ const Abouts = () => {
   return (
     <div>
       {/* <Navigation /> */}
-      {/* <Header data={landingPageData.Header} /> */}
-      {/* <Features data={landingPageData.Features} /> */}
+
       <About data={landingPageData.About} />
-      {/* <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery}/> */}
-      {/* <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} /> */}
       <Footer data={landingPageData.Footer} />
     </div>
   );
 };
-
-const Catalogo = () => {
-  const [landingPageData, setLandingPageData] = useState({});
-  useEffect(() => {
-    setLandingPageData( JsonProduct);
-  }, []);
-  const [categorias, setCategorias] = useState({});
-  useEffect(() => {
-    setCategorias( JsonCategoria);
-  }, []);
-  const [subcategorias, setSubcategorias] = useState({});
-  useEffect(() => {
-    setSubcategorias( JsonSubcate);
-  }, []);
-
-  return (
-    <div>
-      {/* <Navigation /> */}
-      {/* <Header data={landingPageData.Header} /> */}
-      {/* <Features data={landingPageData.Features} /> */}
-      {/* <About data={landingPageData.About} /> */}
-      {/* <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery}/> */}
-      {/* <Testimonials data={landingPageData.Testimonials} /> */}
-      <Team categorias={categorias.rows} subcategorias={subcategorias.rows} productos={landingPageData.rows}  />
-      <Footer data={landingPageData.Footer} />
-    </div>
-  );
-};
-
 
 const Marca = () => {
   const [landingPageData, setLandingPageData] = useState({});
@@ -142,36 +91,32 @@ const Marca = () => {
   return (
     <div>
       {/* <Navigation /> */}
-      {/* <Header data={landingPageData.Header} /> */}
-      {/* <Features data={landingPageData.Features} /> */}
       <Marcas data={landingPageData.Marca} />
       <SliderMarca slides={categoriaMarca} />
-      {/* <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery}/> */}
-      {/* <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} /> */}
-     <Footer data={landingPageData.Footer} />
+      <Footer data={landingPageData.Footer} />
     </div>
   );
 };
 
-const Galeria = () => {
+const Catalogo = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
-    setLandingPageData(JsonData);
+    setLandingPageData(JsonProduct);
   }, []);
+  // const [categorias, setCategorias] = useState({});
+  // useEffect(() => {
+  //   setCategorias( JsonCategoria);
+  // }, []);
+  // const [subcategorias, setSubcategorias] = useState({});
+  // useEffect(() => {
+  //   setSubcategorias( JsonSubcate);
+  // }, []);
 
   return (
     <div>
       {/* <Navigation /> */}
-      {/* <Header data={landingPageData.Header} /> */}
-      {/* <Features data={landingPageData.Features} /> */}
-      {/* <Noticias data={landingPageData.Noticias} /> */}
-      {/* {/* <Services data={landingPageData.Services} /> */}
-      {/* <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} /> */}
-      <Gallery data={landingPageData.Gallery}/> 
-     <Footer data={landingPageData.Footer} />
+      <Team productos={landingPageData.rows} />
+      <Footer data={landingPageData.Footer} />
     </div>
   );
 };
@@ -185,15 +130,33 @@ const Contactanos = () => {
   return (
     <div>
       {/* <Navigation /> */}
-      {/* <Header data={landingPageData.Header} /> */}
-      {/* <Features data={landingPageData.Features} /> */}
-      {/* <About data={landingPageData.About} /> */}
-      {/* <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery}/> */}
-      
-      {/* <Team data={landingPageData.Team} /> */}
       <Contact distribuidores={landingPageData.Contact} />
-     <Footer data={landingPageData.Footer} />
+      <Footer data={landingPageData.Footer} />
+    </div>
+  );
+};
+
+const Galeria = () => {
+  const [landingPageData, setLandingPageData] = useState({});
+  useEffect(() => {
+    setLandingPageData(JsonData);
+  }, []);
+
+  return (
+    <div>
+      {/* <Navigation /> */}
+      <Gallery data={landingPageData.Gallery} />
+      <Footer data={landingPageData.Footer} />
+    </div>
+  );
+};
+const Agregar = () => {
+  
+
+  return (
+    <div>
+      {/* <Navigation /> */}
+      <Agregarproduc/>
     </div>
   );
 };
@@ -201,20 +164,17 @@ const Contactanos = () => {
 function App() {
   return (
     <Router>
-
-        <Navigation />
-
-        <Route path="/" exact component={Index} />
-        <Route path="/blog" component={Bloger} />
-        
-        <Route path="/about" component={Abouts} />
-        <Route path="/catalogo" component={Catalogo} />
-        <Route path="/galeria" component={Galeria}/>
-        <Route path="/sobre-la-marca" component={Marca} />
-        <Route path="/contactanos" component={Contactanos} />
-      
+      <Navigation />
+      <Route path="/" exact component={Index} />
+      <Route path="/blog" component={Bloger} />
+      <Route path="/sobre-la-empresa" component={Abouts} />
+      <Route path="/sobre-la-marca" component={Marca} />
+      <Route path="/catalogo" component={Catalogo} />
+      <Route path="/distribuidores" component={Contactanos} />
+      <Route path="/galeria" component={Galeria} />
+      <Route path="/agregarproducto" component={Agregar} />
     </Router>
   );
-  }
+}
 
 export default App;

@@ -703,8 +703,8 @@ header .intro-text {
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
-/* ------------------------------------Testimonials Section------------------------------------ */
-#testimonials {
+/* ------------------------------------agregarproduc Section------------------------------------ */
+#agregarproduc {
   
   margin: 110px 50px 50px 50px ;
   padding-top: 15px;
@@ -713,11 +713,11 @@ header .intro-text {
   border-radius: 20px 20px 0px 0px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-#testimonials .section-title {
+#agregarproduc .section-title {
   margin-bottom: 20px;
   
 }
-#testimonials .section-title h2 {
+#agregarproduc .section-title h2 {
   font-size: 30px; 
 }
  .tabla thead{
@@ -746,41 +746,27 @@ header .intro-text {
 .tabla td img{
   margin: 0px 7px;
 }
-#testimonials i {
+#agregarproduc i {
   color: #e6e6e6;
   font-size: 32px;
   margin-bottom: 20px;
 }
-.testimonial {
-  padding: 20px;
+.nuevo-pro{
+  background-color: #1e7a46;
+  width: 100%;
+  
 }
-.testimonial-image {
-  float: left;
-  margin-right: 15px;
-}
-.testimonial-image,
-.testimonial-image img {
+.nuevo-pro a{
+  color: #fff;
   display: block;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
-.testimonial-content {
-  position: relative;
-  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: large;
+  
 }
 
-.testimonial-content p {
-  margin: 7px 0;
-  font-size: 16px;
-  font-style: italic;
-}
-.testimonial-meta {
-  margin: 7px 0px;
-  font-size: 17px;
-  font-weight: 600;
-  color: rgb(73, 73, 73);
-}
 /* --------------------------------------------------Team Section-------------------------------------------------- */
 #team {
   padding: 100px 0;
