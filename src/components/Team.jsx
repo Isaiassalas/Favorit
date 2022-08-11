@@ -164,7 +164,7 @@ export const Team = (props) => {
                     >
                       {/* <img src={disponible} width="35px" />  */}
                     </div>{" "}
-                    <img src={p.Imagen} alt="..." className="team-img" />
+                    <img src={`img/team/${p.Imagen}`} alt="..." className="team-img" />
                     <div className="caption">
                       <h4>{p.Marca}</h4>
 
