@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import flecha from "../img/catalogo/abajo.png";
 import Modal from "./modal/Modal";
 
-const url = "http://localhost:8000/api";
+const url = "http://localhost:8000";
 export const Team = (props) => {
   const [opcioncategorias, setOpcionCategorias] = useState("todos");
   const [opcionsubcategoria, setOpcionSubcategoria] = useState("todos");

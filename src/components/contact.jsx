@@ -6,7 +6,7 @@ import twit from "../img/gorjeo.png";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const url = "http://localhost:8000/api";
+const url = "http://127.0.0.1:8000";
 export const Contact = (props) => {
   const [distribuidores, setDistribuidores] = useState([])
   const getAllDistri = async () => {
